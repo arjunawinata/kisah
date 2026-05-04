@@ -1,0 +1,252 @@
+<script language="javascript">
+
+function duc(str){
+  return str;
+}
+
+
+function parse_query_string(query) {
+  var vars = query.split("&");
+  var query_string = {};
+  for (var i = 0; i < vars.length; i++) {
+    var pairg = (vars[i]).split("=");
+    
+    var key = duc(pairg[0]);
+    var value = duc(pairg[1]);
+    //alert ("key-value = " + key + " -- " + value);
+
+    // If first entry with this name
+    if (typeof query_string[key] === "undefined") {
+      query_string[key] = duc(value);
+      // If second entry with this name
+    } else if (typeof query_string[key] === "string") {
+      var arr = [query_string[key], duc(value)];
+      query_string[key] = arr;
+      // If third or later entry with this name
+    } else {
+      query_string[key].push(duc(value));
+    }
+  }
+  return query_string;
+}
+
+function ubahLangsung(){
+  var awal = document.getElementById("isi").innerHTML;
+  var hasil= awal;
+  
+  hasil = hasil.replace(/partodi/g,"Partodi");
+  hasil = hasil.replace(/kristin/g,"Kristin");
+
+  hasil = hasil.replace(/Partodi/g,qs.suami);
+  hasil = hasil.replace(/Kristin/g,qs.isteri);
+  document.getElementById("isi").innerHTML=hasil; 
+}
+
+var query = window.location.search.substring(1);
+var qs = parse_query_string(query);
+if (typeof qs.suami === "undefined") qs["suami"] = "Arjuna";
+if (typeof qs.isteri === "undefined") qs["isteri"] = "Dewi";
+setTimeout(function(){
+  	//alert ("qs.suami = " + qs.suami);
+	//alert ("qs.isteri = " + qs.isteri);
+	ubahLangsung();
+}, 1000);
+  
+
+
+
+function ubah(){
+  var awal = document.getElementById("isi").innerHTML;
+  var hasil= awal;
+  
+  hasil = hasil.replace(/partodi/g,"Partodi");
+  hasil = hasil.replace(/kristin/g,"Kristin");
+
+  hasil = hasil.replace(/Partodi/g,document.getElementById("suami").value);
+  hasil = hasil.replace(/Kristin/g,document.getElementById("isteri").value);
+  document.getElementById("isi").innerHTML=hasil; 
+}
+  
+  /*
+  <br />
+
+<input id="suami" name="suami" type="text" value="suami" />
+<input id="isteri" name="isteri" type="text" value="isteri" />
+<br />
+<input onclick="ubah()" type="button" value="proses" />
+  
+  */
+</script>
+
+<style>
+  #isi {
+    font-family: Verdana, sans-serif;
+  }
+</style>
+
+
+<form>
+<div id="isi">
+
+
+Sebuah perampokan di bank membawa pengalaman baru bagi istri seorang pengusaha. Suaminya menganggap itu kejadian musibah biasa, tapi sang istri menyimpan itu sebagai suatu rahasia. Diikat menjadi satu dengan Satpam bank akhirnya membawa sensasi luar biasa.<br />
+ 
+<br />
+ Chapter 1: Pandangan Suami<br />
+ 
+ Perampokan bersenjata di bank siang itu membawa pengalaman traumatik bagi Aris Hendrawan (27), seorang pengusaha mutiara. Siang itu ia bersama istrinya Kristin (23) berada dalam bank tersebut untuk sebuah transaksi keuangan perusahaan mereka.<br />
+ 
+ Suasana bank cukup ramai, bersama para nasabah lainnya Aris dan Kristin mengantri menunggu layanan kasir. Tiga kasir bank sibuk melayani nasabah, satu persatu.<br />
+ 
+ Lima orang lelaki perbusana serba hitam ditutup jaket kulit hitam tiba-tiba masuk ke ruang tunggu dan langsung mengeluarkan senjata api jenis pistol dan sebuah laras panjang.<br />
+ 
+ Jangan ada yang bergerak.. semuanya diam, jangan membuat tindakan ceroboh atau kepala kalian akan pecah, teriak seorang lelaki yang memimpin.<br />
+ 
+ Ini perampokan, pikir Aris. Suasana sempat kacau penuh teriakan dan para nasabah berhamburan, Aris mengikuti beberapa nasabah yang lari ke lantai dua.<br />
+ 
+ Kawanan rampok itu kemudian menyebar, dua orang masuk ke sisi kasir, sedangkan tiga lainnya sibuk mengacungkan senjata ke nasabah. Seorang lainnya mengejar nasabah yang lari ke lantai dua.<br />
+ 
+ Aris dan enam nasabah dilantai dua tak berkutik ditodong senjata, mulit mereka ditempel lakban, sementara para nasabah di lantai dasar juga sudah sepi tak berani bersuara.<br />
+ 
+ Kawanan rampok mengikat para nasabah. Ada yang tiga menjadi satu, ada yang dua menjadi satu, dan semua mulut mereka ditempel lakban.<br />
+ 
+ Dari balkon dalam lantai dua, bisa melihat semua di lantai satu, tapi ia mendadak khawatir karena tidak melihat Kristin istrinya.<br />
+ 
+ Seorang perampok menjaga di pintu, satpam yang berjaga di meja dalam juga tidak terlihat, hanya pakaiannya tergeletak di lantai, mungkin ia ditelanjangi rampok.<br />
+ 
+ Dua kawanan rampok naik ke lantai dua untuk memeriksa letak brangkas diantar seorang wanita kasir yang ditodong pistol.<br />
+ 
+ Aris mencoba bergeser ke ujung balkon, ia mencari Kristin.Aris lega, ternyata Kristin berada di sebuah lorong sempit menuju toilet. Aris meihatnya terikat menjadi satu dengan seorang lelaki tegap, ia pasti satpam bank, karena hanya mengenakan celana kolor dan kaos dalam.<br />
+ 
+ Tubuh Kristin dan satpam itu terikat menyatu berhadapan dilakban melingkar dibagian pinggang dan dada. Tangan mereka juga diikat lakban ke belakang. Keduanya berbaring dilorong menyamping berhadapan, mulut masing-masing juga tertutup lakban.<br />
+ 
+ Dalam suasana tegang itu, Aris melihat satpam dan Kristin terus berusaha melepas ikatan mereka dengan cara bergerak terus bersamaan untuk melonggarkan lilitan lakban.<br />
+ 
+ Perampokan berjalan hampir satu jam, sampai akhirnya kawanan rampok berhasil kabur membawa jarahannya. Aris bersyukur, Kristin dan satpam bank akhirnya terlepas dari ikatan. Si satpam kemudian membantu nasabah lainnya sementara Kristin membuak ikatan Aris.<br />
+ 
+ Untung kita nggak diapa-apakan ya ma.., kata Aris merangkul istrinya. Mereka kemudian pulang.<br />
+ 
+<br />
+ Chapter 2: Kasaksian Istri<br />
+ 
+ Bagi Kristin, perampokan di bank itu menimbulkan trauma sesaat tetapi berakhir dengan sensasi seks yang selama ini tak pernah ia bayangkan.<br />
+ 
+ Terikat di lorong sempit dengan <b>pinggang di lakban</b> berdempetan, <b>nempel berhadapan berdua</b> dengan lelaki lain membuat Kristin risih bukan kepalang, apalagi si lelaki hanya mengenakan kaos dalam dan celana kolor. Tapi perasaan itu terkubur lantaran takut yang dirasakannya melihat kawanan rampok bersenjata itu.<br />
+ 
+ Sekitar tiga menit berbaring miring berhadapan seperti itu, Kristin melihat lelaki di depannya berhasil membuka lakban di mulutnya setelah berjuang keras mendorong lakban itu dengan lidahnya.<br />
+ 
+ Tenang bu.. saya Partodi satpam di bank ini. Maaf pakaian saya tadi dilucuti rampok. Sepertinya sekarang mereka sedang membongkar brangkas dan tak mungkin kembali ke mari, ayo kita berusaha lepaskan ikatan ini bersama ya.., kata satpam Partodi. Kristin mengangguk saja dan berharap upaya mereka berhasil.<br />
+ 
+ Partodi kemudian melepaskan lakban di mulut Kristin dengan cara menggigit sisi lakban dan menariknya. Kristin sempat terpekik merasakan perih bibirnya tertarik rekatan lakban, tapi kemudian berusaha tenang.<br />
+ 
+ Terus bagaimana caranya, tanya Kristin menanyakan cara mereka melepaskan ikatan lakban di tubuh. Sepertinya sulit karena masing-masing tangan mereka juga terikat ke belakang dililit lakban, sementara lakban lainnya melilit rapat menyatukan bagian pinggang, perut mereka berdempetan.<br />
+ 
+ Partodi lalu menjelaskan pada Kristin bahwa sifat karet pada lakban dapat digunakan sebagai kesempatan mereka lolos dari ikatan. Caranya dengan terus bergerak agar lakban menjadi molor dan longar elastis.<br />
+ 
+ Kita masih punya kaki yang bebas bu. Saya akan membalik badan dan ibu harus berusaha berposisi di atas saya. Setelah itu kaki ibu bisa menjejak lantai mendorong geser ke arah atas tubuh kita mungkin akan berhasil, kata Partodi. Ia segera mengubah posisi mereka dari yang sebelumnya berbaring miring berhadapan, menjadi saling tindih, Kristin berada di atas. Ini dilakukan Partodi agar Kristin tidak merasa berat jika Partodi yang berada di atas, sebab bobot Partodi yang tinggi besar tentu akan menyesah Kristin bila tertindih.<br />
+ 
+ Posisi Kristin sudah di atas tubuh Partodi. Ia menuruti perintah Partodi dan mulai menggerakan badannya ke arah atas tubuh Partodi dengan menjejakkan kaki di lantai. Tapi rok span yang dikenakannya menghalangi usaha Kristin menjejakkan kaki secara maksimal melantai, sebab ia harus lebih mengangkangkan kakinya agar bisa melewati kaki Partodi di bawah kakinya.<br />
+ 
+ Kristin terus berupaya dan akhirnya ia bisa mengangkangkan kaki lebih lebar, akibat gesekan tubuh mereka, rok Kristin naik sampai bongkahan pantatnya terlihat. Tapi tak apa, pikir Kristin, demi usahanya menjejak kaki ke lantai. Lagi pula Partodi tak mungkin melihat pantatnya karena ia berada di bawah Kristin.<br />
+ 
+ <br />  Partodi berbisik pada Kristin "<br />Terus goyang bu.. sudah mulai longgar ikatannya". Namun entah mengapa kata-kata goyang yang dibisikan Partodi membuat Kristin risih. Ia baru sadar gerakannya berusaha melepas ikatan terkesan menjadi gerakan yang erotis.<br />
+ 
+ 
+ 
+ Ia juga baru sadar kalau sejak tadi payudaranya terus menggerus dada Partodi, dan gerakan demi gerakan yang menimbulkan gesekan di tubuh keduanya mulai mempengaruhi libido Kristin.<br />
+ 
+ Astaga.., bang Partodi. Apa ini..? kok terasa keras.. Tolong bang, abang nggak boleh terangsang.. ini dalam perampokan.., Kristin berbisik balik ke Partodi saat merasakan sesuatu benda mengeras hangat terasa di bawah pusar Kristin. Penis Partodi rupanya ereksi setelah beberapa lama merasakan gesekan tubuh Kristin.<br />
+ 
+ Oh.. ehh.. maaf bu.. saya sudah berusaha untuk mengabaikan rasanya tapi gesekan-gesekan itu mengalahkan pikiran saya bu. Maaf bu.. tapi saya pikir ini alami bagi lelaki, yang terpenting sekarang kita harus terus berusaha melepas ikatan ini bu.. sebelum perampok itu kembali ke mari, Partodi agak gugup dan malu menyadari Kristin mengetahui penisnya mulai bangun.<br />
+ 
+ Ya sudah.. nggak apa-apa, asal bang Partodi jangan macam-macam ya.., kata Kristin. Ia sadar tak bisa menyalahkan Partodi. Dan lagi benar apa Partodi bahwa itu sangat alami dan Kristin juga merasakan hal yang sama, ada sedikit kenikmatan menjalari tubuhnya setiap kali gerakan bergesek ia lakukan.<br />
+ 
+ Pikirnya, perampokan bank sialan ini yang menyebabkan mereka berdua berada dalam posisi terikat seperti itu, dan mereka harus bersama kompak melepaskan ikatan tersebut.<br />
+ 
+ Kristin kembali memusatkan pikirannya pada upaya melepaskan lakban. Ia kembali menggerakan tubuhnya menggesek tubuh Partodi dari atas ke bawah dan sebaliknya dari bawah ke atas, agar ikatan lakban melonggar. Upayanya cukup berhasil, kini jarak gesekan sudah bisa lebih jauh menandakan lakban mulai longgar elastis.<br />
+ 
+ Bagian perut Kristin sudah bisa menjangkau perut Partodi bagian atas, Kristin berusaha terus menjejak lantai agar tubuhnya terdorong naik lebih jauh.<br />
+ 
+ Ehmm bu.. coba lagi ke bawah.. terus dorong lagi ke atas.. sudah mulai longgar lakbannya.., suara Partodi semakin parau. Tubuh Kristin yang terdorong ke atas membuat penis Partodi kehilangan sentuhan, sebab selangkangan Kristin kini sudah diatas melewati ujung penisnya.<br />
+ 
+ Kristin setuju dengan Partodi, mungkin gerakan harus kembali ke bawah lalu kembali lagi ke atas sehingga ikatan lakban makin molor elastis.<br />
+ 
+ Tapi gerakan ke bawah yang dilakukan Kristin justru membuat keadaan mereka berdua berubah. Pikiran masing-masing mulai terpecah antara kenikmatan yang mulai dirasakan atau upaya melepas lakban.<br />
+ 
+ Enghhh.., Kristin melenguh kecil. Ia merasakan ujung penis Partodi menyentuh CD yang dipakainya. Penis Partodi yang sudah sangat tegang malah nyembul terdorong keluar dari balik celana kolornya, lantaran gesekan membuat kolornya melorot. Kini, setiap gerakan Kristin membuat koneksi ujung penis Partodi kian terasa mendorong-dorong CD Kristin. Dan disisi lain Rasa nikmat kekenyalan itu terasa semakin sering di bibir vagina Kristin yang terhalang CD.<br />
+ 
+ Kristin terus berupaya memecah pikirannya agar tetap konsentrasi bergerak demi melepas ikatan lakban, tapi semakin bergerak dan semakin gesekan terjadi malah membuat gairah seksualnya terdongkrak naik. Lama-lama ia merasakan Cd-nya membasah oleh cairan vaginannya sendiri. Apalagi, dari bawah Partodi juga terus bergerak menaikkan pantatnya karena berusaha melepaskan ikatan lakban ditangannya yang tertindih ke belakang. Hal ini membuat erotisme tersendiri dirasakan Kristin.<br />
+ 
+ Enghh.. ahhss.., Kristin mendesah dan menghentikan gerakannya. Ia menyadari kini posisi sudah sangat gawat. Gerakan-gerakannya justru mengantar ujung penis Partodi mengakses sisi vaginanya lewat sisi kiri CD-nya. Semakin lama, gerakan itu justru membuat CD Kristin semakin melenceng ke samping. Kini Kristin merasakan kepala penis Partodi sudah benar-benar berada di pipi bibir vaginanya yang basah dan bersentuhan kulit ke kulit, karena CDnya yang kini melenceng ke samping.<br />
+ 
+ Hmm.. bu, kenapa berhenti.. sudah hampir lepas ikatannya nih.., Partodi terus bergerak mengangkat pantatnya dan berusaha melepas ikatan di tangannya yang tertindih. Tapi Partodi juga merasakan penisnya sudah menyentuh kulit vagina Kristin secara langsung, karena sisi CD kristin yang membasah tergeser ke samping.<br />
+ 
+ Kristin berusaha mengembalikan konsentrasinya, dan berusaha menjejak kaki ke lantai agar tubuhnya naik dan vaginanya menjauh dari penis Partodi. Namun upayanya gagal, kini ikatan lakban justru mengancing posisi itu, Kristin tak mungkin naik, hanya bisa turun ke bawah beberapa kali lalu naik lagi setelah ikatan melonggar kembali.<br />
+ 
+ Kristin mulai putus asa. Ia harus bisa lebih cepat melepaskan ikatan lakban itu sebelum penis Partodi mengakses lebih jauh vaginanya. Pikiran sadarnya masih berjalan dan menyadari sesaat lagi ia akan tersetubuhi, dalam keadaan terpaksa begitu.<br />
+ 
+ Konsentrasi Kristin gagal. Gerakan Partodi yang berusaha miring ke kanan dan ke kiri malah membuat kepala penisnya mulai menyeruak membelah bibir vagina Kristin.<br />
+ 
+ Partodi mulai khawatir dan kebingungan , Ough.. koq jadi begini, katanya. Partodi tak kuasa menahan rasa kepala penisnya sedikit masuk ke bibir vagina Kristin. Partodi terdiam, Batangnya berdenyut kencang karena aliran darah di jantungnya berdegup memompakan darah ke urat-urat di batang penisnya. Partodi kembali bergerak berusaha fokus melepas ikatan ditangannya yang tertindih tubuhnya, tapi setiap gerakannya membuat ujung kepala penisnya malah bermain keluar masuk di bibir vagina Kristin.<br />
+ 
+ Hal itu memberi sensasi pada Kristin, Jantungnya berdegup kencang. Ada cairan berasa keluar deras beberapa kali membasahi dinding vaginanya. Dan tanpa disadari vaginanya berasa bergerak sendiri berdenyut-denyut menyedot kepala penis Partodi padahal Kristin dalam keadaan diam dan tidak ada bergerak sedikitpun.&nbsp; ia masih berusaha diam diatas tubuh Partodi mencari waktu sampai ada kesempatan menjejak kaki, berusaha semaksimal mungkin agar vaginanya menjauh dari penis Partodi. <br />
+ <br /><br />
+ Enghhsshh.. ahh.., bang jangan gerak duluhh.. ini nggak boleh terjadi bang, saya wanita bersuami dan abang pasti sudah beristri kan?. kata Kristin, wajahnya bersemu merah, Tubuh dan wajah Kristin serta kulitnya yang putih. <br />
+ 
+ Mereka berdua terdiam sejenak, memejamkan mata, berusaha berfikir sambil merasakan denyutan-denyutan di alat kelamin masing-masing.&nbsp;<br />
+ Kristin
+ akhirnya berspekulasi. Tidak bisa terus diam begini, Kristin berfikir 
+minimal harus ada satu kali gerakan ke bawah, lalu dengan sekuat tenaga 
+Kristin akan menjejak kaki ke lantai tentu akan membantunya menjauhkan 
+vaginanya dari penis Partodi.<br />
+ 
+ Hmmhhfff ... Kita harus merubah keadaan ini bang, kata Kristin sambil menahan nafasnya karena nafsunya sudah di ubun-ubun.<br />
+ Iya bu.. saya juga pikir begitu. Tapi bagaimana lagi, posisi kita sulit berubah selama ikatan ini.., jawab Partodi, ia juga menjadi serba salah dengan posisi itu.<br />
+ 
+ Oke bang.. sekarang gini aja.. saya akan bergerak turun, dan mungkin itu akan terjadi ... tapi itu hanya sekali ya, dan saya akan mendorong ke atas membuatnya lepas lagi. Setelah itu kita konsentrasi lagi untuk melepas lakban sialan ini.., kata Kristin dengan nafas berat.<br />
+ 
+ Iya.. iya. Terserah ibu. Tapi tolong saya jangan dilaporkan ke atasan saya apalagi polisi bu. Kalau anu saya sampai masuk ke punya ibu.. nanti saya dibilang memperkosa, Partodi polos ketakutan.<br />
+ 
+ Hnnggaak bang.. ini kan karena perampokan sialan itu, jadi bukan salah saya atau abang.. kita sama-sama berusaha keluar dari masalah ini kok.. sekarang abang diam ya.. saya akan berusaha.&nbsp;<br />
+<br />
+ Kristin menarik nafas panjang, <br />
+ satu ...<br />
+ dua ...<br />
+ tiga ...<br />
+<br />
+ Kristin mulai mengerakan tubuhnya perlahan-lahan bergeser ke bawah, selambat mungkin berusaha meminimalkan gesekan yang terjadi. Namun Gerakan itu malah membuat bibir vaginanya yang sudah kemasukan ujung penis Partodi, malah sekarang menelan setengah penis itu dengan rasa yang luar biasa dahsyat di dalam vaginanya. <br />  Ehmm enghhmmmpp ahssstt ahhhkksss, Kristin tidak kuasa.<br /><br />
+ 
+ Partodi sebenarnya wajahnya manis seperti artis Anjasmara, dan badannya kekar. Jujur, Penis Partodi dirasakan Kristin lebih besar dan padat dari penis Aris suaminya. Kristin tak bisa memungkiri sensasi yang dirasakannya saat penis Partodi yang berasa kekar berurat terbenam setengah batang di dalam vaginanya.<br />
+ 
+ Ayo bu.. cepat dorong lagi ke atas biar lepas, Partodi khawatir karena kini setengah dari batang penisnya sudah mulai tertelan di vagina Kristin.<br />
+ 
+ Iya bang.. hmmmpphh aahhss , Kristin berusaha menjejak kaki ke lantai agar tubuhnya terdorong ke atas dan penis itu segera lepas dari vaginanya, tapi keadaan tak berubah, ikatan lakban malah mengancing bagian pinggang mereka membuat Kristin tak mungkin menaikkan tubuhnya.<br />
+ 
+ Akhhss.. bangghh.. gimana inihh.. ahsss.., Kristin kembali diam tak bergerak, separuh penis Partodi yang dirasanya mebuat nafasnya semakin berat.<br />
+ 
+ Oke.. sekarang ibu diam saya biar tidak semakin masuk punya saya. Saya akan berusaha melepas ikatan tangan saya dibawah badan saya bu.. engghhh, Rencananya Partodi akan mengangkat pinggulnya dan pantatnya keatas agar tangannya bisa bergerak bebas, lalu berusaha melepas dua tangannya dari ikatan lakban. Peluh sudah membasahi tubuh keduanya.<br />
+ 
+ Partodi mencoba mengangkat pinggulnya. Namun Pinggul dan pantatnya yang terangkat malah membuat penisnya masuk lebih dalam ke vagina Kristin. Kristin sudah pecah konsentrasi, kini pikirannya hanya merasakan sensasi karena hampir seluruh batang penis Partodi keluar masuk perlahan di vaginanya karena gerakan pinggul Partodi.<br />
+ 
+ Akhhss bangghhss ouhh.. akhhh.. ahkkk enghhhmm, Kristin semakin mendesah, kini pinggul Kristin malah tanpa sadar diturunkannya berusaha agar penis Partodi terasa lebih dalam di vaginanya.<br />
+ 
+ Tangan Partodi sudah terlepas dari ikatan dan kini bebas. Tapi libido yang sudah tinggi membuat Partodi tidak kuasa.<br />
+ Masih disatukan dengan ikatan di pinggang,<br /> <span style="font-family: &quot;georgia&quot; , &quot;times new roman&quot; , &quot;times&quot; , serif;"> <br />Kristin merasakan tiba-tiba seluruh urat-urat di penis Partodi berdenyut semakin kencang didalam vaginanya. Kenikmatan pun juga memuncak di klitoris Kristin seolah mengumpul panas hingga bongkahan pantatnya. <br />   Tubuhnya menegang merasakan kontraksi otot vaginanya berkedutan intens.<br /><br /><br />
+<br />
+ Dan tanpa gerakan apapun tiba-tiba kaki dan paha Kristin tegang dan bergetar hebat, <br /> Dan bbrrrr... Oughh.. banghhhss akhhsss.. sayaa banhgg akhhhsss say..ah.. sampaaiiihhh bangghhsss ouhhhggg,&nbsp;<br />
+ <br /><br />
+ Disaat yang bersamaan, Aghh ahhh buhhh akhhsss uhhhmmmpphhh .. say..ah ...jugaaah, Partodi membenamkan seluruh penisnya ke vagina Kristin dan melepas spermanya menyembur dinding rahim Kristin. Tubuh keduanya seakan menegang bersamaan mencapi klimaks seksual.<br />
+ 
+<br />
+ Keduanya tergolek lemas sambil menikmati orgasme. Beberapa saat setelah keduanya beristirahat, Partodi lalu melepas ikatan lakban yang menyatukan pingang mereka. Mereka berdua lalu merapihkan busana masing-masing. Perampokan baru saja usai, dan kawanan perampok sudah meninggalkan bank dengan barang jarahannya.<br />
+ 
+ Emm.. bu.. maafkan atas yang barusan terjadi bu. Saya khilaf engg..,<br />
+ 
+ Sudah.. sudah bang. Lupakan saja ya.. saya juga khilaf.., Kristin memotong pembicaraan Partodi. Keduanya lalu berkenalan lebih jauh dan berjanji untuk sama-sama menyimpan kejadian itu hanya di antara mereka berdua.<br />
+ 
+ Keduanya lalu berpisah, Partodi menolong membebaskan nasabah bank di ruang tunggu, sementara Kristin mencari Aris suaminya yang terikat di lantai dua. <br />
+  
+</div>
+</form>
+
+
