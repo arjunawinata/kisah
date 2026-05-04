@@ -1,0 +1,626 @@
+<script language="javascript">
+
+function duc(str){
+  return str;
+}
+
+
+function parse_query_string(query) {
+  var vars = query.split("&");
+  var query_string = {};
+  for (var i = 0; i < vars.length; i++) {
+    var pairg = (vars[i]).split("=");
+    
+    var key = duc(pairg[0]);
+    var value = duc(pairg[1]);
+    //alert ("key-value = " + key + " -- " + value);
+
+    // If first entry with this name
+    if (typeof query_string[key] === "undefined") {
+      query_string[key] = duc(value);
+      // If second entry with this name
+    } else if (typeof query_string[key] === "string") {
+      var arr = [query_string[key], duc(value)];
+      query_string[key] = arr;
+      // If third or later entry with this name
+    } else {
+      query_string[key].push(duc(value));
+    }
+  }
+  return query_string;
+}
+
+function ubahLangsung(){
+  var awal = document.getElementById("isi").innerHTML;
+  var hasil= awal;
+  
+  hasil = hasil.replace(/arjuna/g,"Arjuna");
+  hasil = hasil.replace(/maria/g,"Maria");
+
+  hasil = hasil.replace(/Arjuna/g,qs.suami);
+  hasil = hasil.replace(/Maria/g,qs.isteri);
+  document.getElementById("isi").innerHTML=hasil; 
+}
+
+var query = window.location.search.substring(1);
+var qs = parse_query_string(query);
+if (typeof qs.suami === "undefined") qs["suami"] = "Arjuna";
+if (typeof qs.isteri === "undefined") qs["isteri"] = "Dewi";
+setTimeout(function(){
+  	//alert ("qs.suami = " + qs.suami);
+	//alert ("qs.isteri = " + qs.isteri);
+	ubahLangsung();
+}, 1000);
+
+</script>
+
+<style>
+  #isi {
+    font-family: Verdana, sans-serif;
+  }
+</style>
+
+<div id="isi">
+
+<br />
+<br />
+Pendahuluan<br />
+Di dusun Sukamandi tinggalah seorang pria yang tengah berjuang mengembalikan kepercayaan isterinya. Dia tinggal di kontrakan rumah kayu dengan kebun kecil mengelilingi rumah. Si pria dulunya adalah seorang kaya yang hilaf dan lupa diri sehingga menyakiti semua orang yang mengasihinya. <br />
+<br />
+Termasuk Maria isterinya yang sekarang telah menjadi mantan isterinya akibat talak yang diberikan pria itu terhadap isterinya pada puncak masa kesombongannya. Bahkan dengan tidak memberikan harta gono-gini sepeserpun. Sang isteri pun akhirnya pulang ke kampung dan menafkahi hidupnya dengan bertani seperti yang pernah di pelajarinya dulu.<br />
+<br />
+Si pria bernama arjuna. Wajahnya lumayan manis dan tampan, ada sedikit uban sesungguhnya memperlihatkan penyesalan dan penderitaan yang telah dilaluinya, karena sebenarnya usianya baru 29 tahun. Sudah 2 tahun arjuna bertobat dan meninggalkan seluruh bisnis kotor dan kehidupan lamanya. Dan sekarang dia hanya ingin kembali memperjuangkan kehidupan rumah tangga-nya yang telah porak-poranda dirusak olehnya sendiri. Dia sengaja mencari berbagai cara untuk mendekati mantan isterinya kembali, sampai harus menyewa di kontrakan gubuk kayu disebelah kontrakan tempat Maria tinggal.<br />
+<br />
+Maria berusia 33 tahun lebih tua sedikit dibanding suaminya, namun Wajahnya yang imut dan cantik sering membuat orang mengira ia baru berusia dua puluhan. Bila suaminya tinggi 177 cm, Maria bertinggi badan 160 cm. Walaupun ini adalah tinggi rata-rata wanita indonesia, namun karena tubuh Maria yang berisi dan padat sehingga dia tidak nampak tinggi ataupun pendek dibanding perempuan lain.<br />
+<br />
+Maria sesungguhnya juga ingin sekali berbaikan kembali dengan mantan suaminya. Ini terlihat dari sikap positifnya yang memperbolehkan arjuna tinggal bersebelahan kontrakan dengannya. Namun kepercayaannya belum seratus persen tumbuh kembali kepada arjuna. Dia masih takut arjuna akan berulah seperti dulu lagi. Sekarang Maria memantapka hatinya untuk hanya berhubungan sebatas teman saja ... maksimal ya sahabat dekat ... itupun kalau mantan suaminya benar-benar telah berubah.<br />
+<br />
+BAB SATU<br />
+AWAL MULA<br />
+<br />
+Hari itu bukan pertama kalinya Arjuna ingin sekali ngemprut, setelah sekian lama berjuang untuk kembali dengan mantan isterinya tersebut. Ngemprut adalah aktivitas laki dan perempuan yang saling mengadukan kelamin sehingga menyatu. Itu sebabnya, bahasa Indonesia untuk ngemprut adalah bersetubuh. Menjadi satu tubuh. Yang laki masukkin titit-nya ke tempik perempuannya. Terus rasanya enak.<br />
+<br />
+Arjuna ingin sekali melihat lagi, tubuh mantan isterinya telanjang bulat. Maka diambilnyalah keputusan untuk mengintip mantan isterinya waktu lagi mandi.<br />
+Rumah mereka adalah rumah petani sederhana terbuat dari kayu. Kamar tamu kecil dengan dua kamar tidur. Sementara dapur mereka di belakang semi permanent bersandingan dengan kamar mandi yang juga hanya semi permanen dengan anyaman bambu. Kedua kamar kontrakan itu hanya terpisah oleh satu buah dinding saja. Kamar mandi di sebelah kiri dan di sebelah kanan adalah dapurnya.<br />
+Berhubung ilham ini datang sewaktu malam, Maka malam itu ketika semua orang tidur arjuna mulai bekerja. Dicobanya mengintip dari lubang anyaman bambu, ternyata agak susah. Maka, di sudut ujung dapur Arjuna membuat beberapa lubang, beberapa di bagian atas, beberapa di tengah dan beberapa bawah, dengan pisau. Lubang itu dibuat tepat diantara anyaman. Setelah selesai, dia menambal dengan potongan kain coklat sehingga tidak akan begitu terlihat.<br />
+<br />
+Ketika subuh Arjuna baru bangun. Arjuna merasa tak sabar sehingga ia harus melihat mantan isterinya telanjang secepatnya hari itu. Arjuna tidak tahu, bila hari biasa seperti hari itu, kapan mantan isterinya mandi. Arjuna hanya tahu bila hari minggu maka mantan isterinya akan mandi sekitar subuh, karena mantan isterinya sudah mandi ketika Arjuna bangun pagi.<br />
+Perlahan Arjuna beringsut keluar kamar, ternyata Maria sudah bangun dan sedang mencuci piring, berhubung rumah ini adalah rumah kampung, maka cuci piring dilakukan di kamar mandi. Maria rupanya belum mandi, namun sudah bersiap untuk mandi. Perempuan itu memakai handuk, dan Arjuna dapat melihat tali BH Hitam mantan isterinya itu masih dipakai. Bila selesai mandi biasanya mantan isterinya tidak akan memakai BH di balik handuknya.<br />
+<br />
+Setelah beberapa lama, akhirnya Maria selesai mencuci piring. Setelah piring di taruh di dapur, maka Maria segera masuk ke kamar mandi. Maria tidak tahu bahwa mantan suaminya mengawasinya dengan hati-hati dari sebelah rumah. Ketika Maria menutup pintu kamar mandi, maka Arjuna bergegas ke dapur dan membuka lubang-lubang yang telah disiapkannya.<br />
+Kamar mandi itu terdiri dari bak mandi dan toilet. Keduanya terletak di kanan tak jauh dari pintu, berhubung kamar itu tidak begitu luas, dengan toilet menempel dengan dinding yang berpintu dan persis disebelah yang lain bak mandi itu menempel pada toilet. Bak itu tidak tinggi, hanya setinggi paha orang dewasa, namun memanjang kesamping. Dinding bambu kamar ini dicat putih dengan penerangan lampu neon. Berhubung atapnya tidak terlalu tinggi, maka lampu neon cukup menerangi kamar itu dengan jelas.<br />
+mantan isterinya sedang kencing dengan jongkok di toilet. Karena toilet itu letaknya di kanan sehingga berhadapan langsung dengan tembok dapur yang dilubangi oleh Arjuna. Maka ketika Arjuna mulai mengintip, ia sedikit kecewa karena mantan isterinya sedang memunggunginya. Namun, jarak antara mereka berdua kini hanyalah sekitar 10 cm dan berbataskan dinding anyaman bambu saja. Arjuna dapat melihat tubuh mantan isterinya yang telanjang bulat dari belakang. Kulit mantan isterinya yang kuning langsat bagaikan bersinar karena tertimpa lampu neon seakan mengundang lelaki untuk mengelus dan menciuminya. Arjuna juga dapat melihat kedua pantat mantan isterinya yang bulat dan sekel yang seakan meminta diremas-remas. Arjuna tidak sabar menunggu mantan isterinya segera mandi. Akhirnya tak lama mantan isterinya berdiri, lalu turun dari toilet dan melangkah untuk berdiri di depan bak mandi, sehingga kini Arjuna dengan bebasnya melihat tubuh telanjang mantan isterinya dari depan. mantan isterinya menaruh kaki kirinya di bak mandi dan mulai cebok secara perlahan.<br />
+Arjuna terkejut dan sedikit menarik nafas kaget melihat pemandangan indah nan erotis di hadapannya ketika mantan isterinya berdiri dan melangkah ke depan bak mandi. Walaupun tidak muda lagi mantan isterinya memiliki tubuh yang sangat sintal berlekuk cantik dan menggiurkan. mantan isterinya tidak kurus, namun juga tidak gemuk. Ketika telanjang, tubuh mantan isterinya tampak sekel dan sangat seksi. Tubuh itu tampak berisi, tidak ada urat atau otot yang menonjol, namun juga tidak terlihat gembyor karena kegemukan. Dada mantan isterinya padat, perutnya pun padat dengan sedikit lemak di atas pinggang.<br />
+<br />
+Arjuna dapat melihat pentil buah dada mantan isterinya dengan jelas, berwarna coklat muda kemerahan dengan ujung seperti penghapus pensil berbentuk silinder tumpul bundar dan pada bagian dasarnya berbentuk lingkaran yang sedikit lebih lebar dari tutup botol sirup. Pentil itu menghiasi puncak payudara mantan isterinya yang bentuknya bagaikan tetesan air mata dengan bagian bulat menggantung ke bawah hampir sebesar buah kelapa yang sudah diserut kulitnya.<br />
+Payudara itu amat indah, dengan puting yang terletak hampir tepat di tengah-tengah, sehingga secara proporsional menunjukkan keadaan yang masih lumayan kencang, hanya sedikit agak kendor karena usia, namun masih dapat dibilang indah. Bahkan, karena mantan isterinya ini adalah perempuan desa yang tidak pernah pergi ke salon atau perawatan kecantikan, bisa dibilang inilah salah satu payudara dengan keindahan alami yang jarang dimiliki oleh perempuan pada umumnya.<br />
+Ketika mantan isterinya mulai cebok dengan satu kaki di atas bak mandi, Arjuna menelan ludah berkali-kali melihat seluruh selangkangan mantan isterinya yang telanjang tanpa ditutupi apapun. Dengan rambut kemaluan yang tipis dan keriting yang tumbuh sepanjang selangkangan itu dan melingkari bibir memek yang merah muda nan mengkilat karena terkena air kencing dan kini di siram air untuk membersihkan bekas kencing itu, membuat kontol Arjuna tidak dapat menjadi lebih keras lagi. Arjuna mengeluarkan kontolnya dan mulai mengocok batangnya perlahan-lahan sambil terus mengintip.<br />
+Untungnya mantan isterinya bukanlah orang yang suka bergegas. Ia melakukan segala sesuatu tanpa ada kesan terburu-buru. Karena itulah Arjuna dapat menikmati cukup lama keindahan kemaluan mantan isterinya. Arjuna berusaha menghafal segala lekuk lubang kencing mantan isterinya itu. bagaimana bentuk bibir kemaluannya, bagaimana warna dan tekstur dinding di dalamnya, yang dapat ia lihat ketika mantan isterinya menggosokkan tangannya waktu cebok, bagaimana jembut mantan isterinya berkilau terkena air, bagaimana gerakkan memek itu ketika digosok dan seluruh pemandangan yang bisa ia dapatkan.<br />
+<br />
+Setelah itu mantan isterinya mulai mandi. Arjuna dengan bahagia mengamati dengan teliti segala gerakan tubuh mantan isterinya yang dimatanya semakin lama semakin erotis. Padahal mantan isterinya hanya mandi. Dinikmatinya deburan air yang menghujam badan mantan isterinya itu, meninggalkan jejak-jejak basah di seluruh kulit kuning langsat itu. Bulir-bulir air yang menempel di tubuh mantan isterinya ditingkahi oleh sinar lampu neon membuat tubuh yang molek itu bagaikan permata yang berkilau-kilau. Diikutinya gerakan air ketika mantan isterinya menyiramkan air ke tubuhnya sendiri, bagaimana air menyusuri tubuh mantan isterinya dari kepala, leher, dada, sepanjang payudara dan belahan dada, turun ke perut dan menyebar jatuh melewati kedua kaki dan selangkangan mantan isterinya. Andaikan aku adalah air, tak akan kutinggalkan tubuh seksi itu, pikir Arjuna yang semakin mempercepat kocokan pada tititnya.<br />
+<br />
+Kemudian pemandangannya berubah lagi ketika mantan isterinya mulai menyabuni badannya. Busa-busa dari sabun menghiasi tubuh telanjang mantan isterinya bagaikan salju yang menghampar di pegunungan Jayawijaya. Bagaimana busa-busa itu mengubah bentuk menjadi seperti tubuh yang dibungkusnya. Busa-busa menghampar sepanjang tangan dan kaki, namun melingkari buah dada dan perut, menambah kesan dan aksen akan keindahan yang ada. Apalagi ketika busa itu menipis, kulit kuning langsat mantan isterinya itu kini bukan hanya bersinar tapi seakan berkerlap-kerlip dan menjanjikan sesuatu yang licin untuk dirasakan dan dinikmati.<br />
+Ketika Maria mengangkat sebelah kaki lagi dan menaruhnya di bak mandi untuk kedua kalinya, untuk lalu menyabuni selangkangannya, Arjuna mulai mengocok kemaluannya dengan cepat dan brutal. Pemandangan erotis di ruang sebelah itu sungguh semakin lama semakin membuat Arjuna tidak tahan. Sambil mengerang dengan suara yang tertahan karena takut ketahuan, Arjuna membelalakkan matanya lebar-lebar dan menganiaya kontolnya dengan nafsu yang di ubun-ubun kepala.<br />
+Tubuh telanjang Maria yang licin dan mengkilat ditambah dengan memek yang kini terlihat lagi dan sedang diusap dengan tangan bersabun sehingga bibir vagina mantan isterinya itu bergerak merekah ketika jemari Maria mengusap lewat, akhirnya berhasil membuat Arjuna mencapai klimaksnya. Dengan desahan dan erangan yang ditahan, Arjuna ejakulasi di dinding dapur itu.<br />
+<br />
+Arjuna bergegas mencari lap dan membersihkan dinding dapur dengan cepat namun ketika menggosok dinding ia melakukannya dengan lembut sehingga tidak berisik. Ia takut apabila mantan isterinya melihat lendir pejunya menempel tembus ke dinding sebelah. Setelah dapur bersih Arjuna ngibrit ke kamar lagi dan tidur.<br />
+<br />
+BAB DUA<br />
+MASALAH KELUARGA<br />
+<br />
+Kegiatan Arjuna mengintip mantan isterinya mandi sekarang menjadi aktivitas harian yang tidak akan dilewatkannya. Arjuna kini sudah hafal bentuk tubuh mantan isterinya dari ujung kepala sampai ujung kaki. Dari bagian belakang maupun bagian depan. Apalagi kedua buah dada Maria yang besar dan ranum itu, yang dihiasi oleh puting indah bagaikan buah yang ditaruh di atas es krim sebagai penghias. Bentuk payudara mantan isterinya terekam dengan begitu jelas sehingga seakan meninggalkan jejak di benaknya yang tak dapat dihilangkan. Arjuna tinggal memejamkan mata, maka kedua payudara itu akan muncul di benaknya. Lekuk lingkar buah dada itu, jurang yang terjadi antara dua buah payudara itu, warna kulitnya yang kuning langsat, dan kilauan kulitnya yang basah ketika terkena sinar neon.<br />
+<br />
+Perkembangan hubungannya dengan Maria sebenarnya telah cukup baik. Namun mantan isterinya itu telah memberikan ultimatum kalau hubungan mereka maksimal hanya boleh sebatas teman, tidak lebih. Itulah yang di inginkan Maria. Dan kalau Arjuna macem-macem maka Maria mengancam untuk tidak akan segan-segan untuk pergi menghilang selamanya dari hadapan Arjuna. Arjuna sangat sedih dan tidak habis pikir dengan sifat Maria yang keras itu. Namun ia pun sadar diri, kalau semua ini adalah salahnya dari semula.<br />
+<br />
+Maka keesokkan harinya, Arjuna mulai berfikir. Ia kini mencoba membantu pekerjaan Maria di rumah. Ia bantu mantan isterinya untuk mencuci piring bahkan pakaian. mantan isterinya tentu senang Arjuna membantunya karena dahulu untuk merapikan tempat tidur sendiri saja Arjuna malasnya bukan main. Ketika ditanya mantan isterinya, Arjuna menjawab,<br />
+“Aku baru sadar,&nbsp; selama ini kamutelah capek sekali merawat rumah dan diriku. Aku juga baru mengerti kalau itu adalah caramu untuk mengungkapkan rasa sayang kepada keluarga. Nah, aku memutuskan untuk membalas kebaikan dan rasa sayang-mu dulu. aku akan bantu segala pekerjaan kamu.”<br />
+Maria yang tidak mengetahui intensi dari mantan suaminya, menjadi cukup tersentuh. Setelah bertahun-tahun kini hasil perjuangan dan kerja keras arjuna mulai memperlihatkan buahnya. Tanpa sengaja Maria memeluk kepala mantan suaminya itu lalu berkata,<br />
+“Kamu sebenarnya adalah pria yang baik.”<br />
+Sementara Arjuna bagaikan diberikan kado sebelum hari ulangtahun. Baru kali ini setelah bercerai, mantan isterinya merangkulnya. Arjuna tak ingat kapan terakhir kali dipeluk mantan isterinya, mungkin tahun pertama atau kedua pernikahan mereka. Tapi kini mantan isterinya merangkulnya. Mata arjuna berkaca-kaca.<br />
+<br />
+Arjuna balas merangkul dengan kencang sambil berkata,<br />
+“Arjuna sayang Maria "<br />
+" ... sebagai teman " ralatnya.<br />
+"Sebagai teman baik Arjuna akan selalu menyenangkan Maria, jangan sampai Maria capek atau sedih. Arjuna akan menjaga Maria selamanya.”<br />
+Maria terharu dan mempererat rangkulannya. Sementara perasaan Arjuna malah menjadi bagaikan di awang-awang. <br />
+<br />
+Ketika Maria memeluknya, hidung Arjuna hinggap di bagian atas dada mantan isterinya itu, karena Maria menarik kepala Arjuna sehingga dagu Maria menempel pada ubun-ubun pria itu. Arjuna dapat mencium bau tubuh mantan isterinya yang berkeringat. Bau tubuh perempuan desa yang belum mandi. Baunya lumayan jelas dan menyengat hidung, namun bukan bau yang membuat mual, namun justru bau yang membuat gairah kelelakian bangkit, membangkitkan si rudal untuk bersiap-siap mencari sarang beludru di mana bau itu sangat jelas memancar.<br />
+Kulit mantan isterinya licin terasa di wajah Arjuna karena keringat. Baik keringat Arjuna sendiri dan mantan isterinya kini berbaur. Dapat dirasakan Arjuna, buah dada mantan isterinya menekan dadanya sendiri. Ingatan akan bentuknya membuat burung Arjuna kini menegak sampai seratus persen dan tidak dapat bertambah panjang lagi. Maka Arjuna membenamkan wajahnya di dada mantan isterinya, dapat dirasakan bibirnya menempel di bagian atas kedua payudara mantan isterinya dan sedikit bibirnya menempel di sela-sela buah dada itu yang seakan adalah jurang pemisah kedua gundukan indah.<br />
+<br />
+Tiba-tiba Maria membeku. Lalu mendorong tubuh mantan suaminya sambil berkata,<br />
+“Mas, sekarang kamu pulang sana dan mandi yang bersih. Badan kamu keringetan.”<br />
+Arjuna kecewa. Namun ia harus sabar. Ia tahu bahwa usahanya tidak akan langsung berhasil melainkan keberhasilan akan datang bila ia sabar. Maka Arjuna bergegas bangkit untuk pulang, sesuai dengan permintaan mantan isterinya.<br />
+<br />
+Untuk selanjutnya, Arjuna terus membantu di rumah. Bahkan tanpa disuruh ia membantu. Ketika atap bocor, maka Arjuna tanpa diminta membetulkannya. Ketika pagar perlu diperbaiki, ia segera membetulkannya. Untuk sebulan kemudian, Arjuna menjadi suami yang berbakti sekali, menjadikannya tidak hanya disayang Maria, melainkan bahkan mulai dipuji oleh para tetangga<br />
+.<br />
+Selama sebulan itu ia tidak pernah berpelukan lagi dengan mantan isterinya. Maka Arjuna berpikir apa yang akan menjadi aksinya berikut, karena usahanya tampak tidak berhasil menambah kedekatannya dengan mantan isterinya. Akhirnya ia menemukan suatu akal.<br />
+Saat itu Arjuna akan pergi ke kota. Ia telah sarapan dan sudah berpakaian rapi dan menyandang tasnya. mantan isterinya sedang membereskan bale. Karena sekarang mereka selalu sarapan di sana, berhubung arjuna tidak pernah memasak. Arjuna menghampiri mantan isterinya dan kemudian Maria mencium tangannya seperti kebiasaan selama ini. Namun setelah itu ia bertanya kepada mantan isterinya,<br />
+“Maria, kenapa ya, orang indonesia cium tangan ketika mau pergi?”<br />
+“Mmmm….. sudah tradisi jawa khan mas dari dulu.”<br />
+“Iya, tradisi ini memang bagus, karena menunjukkan rasa hormat. Namun sepertinya tetap memberikan jarak. Sepertinya susah sekali untuk menjadi dekat dengan mu.”<br />
+“Maksud kamu apa sih, mas?”<br />
+“Iya, Waktu itu saya pernah tinggal di salah satu rumah kolega yang memiliki keluarga yang harmonis di Amerika sana.”<br />
+“Terus?”<br />
+“Di sana mereka bukan cium tangan, lho.”<br />
+“Lah? Terus bagaimana?”<br />
+“Mereka itu cium pipi kanan kiri. Kalau dilihat, keluarga mereka dekat sekali. Banyak masalah dalam keluarga diselesaikan dengan mudah dengan saling berbicara bukan seperti ada kasta, tapi seperti sederajat begitu. Mungkin itu karena mereka sangat dekat satu sama lain.”<br />
+“Itu kan orang Amerika, mas. kita kan orang Indonesia.”<br />
+“Iya sih. Tapi selama sebulan ini, Arjuna telah bantu Maria di rumah, Arjuna merasa kita menjadi semakin dekat. Ga kayak dulu-dulu. Sekarang kita banyak ngomong, deket sekali, Maria. Seperti sahabat. Nah, Arjuna pikir, Maria dan Arjuna sudah mulai berbicara dengan nyaman, dan hubungan pertemanan sudah seharusnya sederajat, kayak pandangan orang Amerika itu. Benar kan, Maria?”<br />
+“Betul. Terus?”<br />
+“Nah, bagaimana kalau selain Maria cium tangan, Arjuna juga cium pipi Maria, siapa tahu lama-kelamaan kita bisa menjadi teman yang seharusnya memang sederajat. "<br />
+Maria berpikir sebentar. Namun, berhubung Maria tidak tahu niat Arjuna sebenarnya, maka akhirnya ia memutuskan untuk memperbolehkan Arjuna.<br />
+<br />
+Segera Arjuna mencium kedua pipi mantan isterinya dengan cepat, agar tidak menimbulkan curiga. Lalu Arjuna segera berangkat. Akhirnya, kegiatan ini menjadi rutinitas setiap pagi. Maria akan cium tangan arjuna, lalu arjuna mencium kedua pipi Maria. Minggu-minggu pertama ciuman Arjuna hanya sekejap. Namun makin lama, ciuman itu sedikit dilamakan oleh Arjuna. Dari hanya sepersekian detik, pada akhir minggu ketiga ciuman itu menjadi satu detik.<br />
+<br />
+Maria senang juga dalam hatinya. Mantan suaminya mulai menunjukkan kasih sayang yang belum pernah dirasakannya. Arjuna selalu membantu di dalam rumah, selain itu Maria juga merasa bahwa perkataan Arjuna benar, bahwa dengan mencium pipi, mereka menjadi sederajat. Maria menjadi lebih banyak bercerita kepada Arjuna mengenai rumah dan permasalahannya. Tentu saja bukan permasalahan seks yang telah lama tak pernah dirasakannya, namun mengenai permasalahan rumah lainnya. Terkadang pula Maria curhat bila ada permasalahan dengan tetangga. Makin lama mereka menjadi semakin kompak dan menjadi sahabat yang dekat.<br />
+<br />
+Suatu hari, sekitar dua bulan setelah ciuman pertama Arjuna, Maria memutuskan untuk membelikan baju baru untuk Arjuna dari uang tabungannya selama ini. Walaupun tidak menghabiskan tabungan, namun cukup mahal juga kalau dalam ukuran seorang wanita petani kecil. Arjuna gembira sekali, dipeluknya mantan isterinya, lalu diciumnya pipi mantan isterinya, kali ini sekitar dua detik dan ciuman Arjuna ketika dilepas terdengar suara kecupan. Maria kaget, namun ketika dilihatnya wajah Arjuna sangat gembira, Maria tidak jadi marah. Mulai saat itu Arjuna mencium mantan isterinya dengan memberikan kecupan saat melepaskan bibirnya. Dan mereka menjadi lebih dekat lagi.<br />
+<br />
+Beberapa hari kemudian, saat hari minggu dan banyak orang desa menonton disana, Maria memutuskan untuk menonton juga. Kali ini film barat, tetapi yang lucu didalam film itu sang pria selalu mencium bibir wanita sahabatnya ketika akan berpisah.<br />
+Ketika mereka pulang, mereka membahas hal ini. Saat itu mereka sudah selesai cuci piring dan telah selesai pula menaruh perabotan dan piring di rak piring di dapur.<br />
+“Tuh, kan. Orang Amerika cium sahabatnya juga. bagaimana kalau kita juga cium seperti mereka, di bibir? Boleh kan?”<br />
+Maria berfikir kalau hanya sebentar apalagi dengan motivasi seorang sahabat tentunya tak masalah. Malah hubungan mereka mungkin bertambah kental. Maka Maria menjawab dengan mengangguk.<br />
+<br />
+Arjuna lalu mengecup kedua pipinya seperti biasa lalu mengecup bibir Maria. Entah kenapa Maria merasakan sesuatu yang aneh. Bibir Arjuna begitu hangat ketika menempel pada bibirnya. Nafas Arjuna tercium bersih, beda dengan nafas Arjuna yang dulu selalu berbau rokok. Hanya 2 detik dan Maria tiba-tiba saja merasa bahagia. Mungkin Arjuna benar, pikir Maria. Karena ia merasa menjadi sangat dekat dengan mantan suaminya itu.<br />
+Sementara itu Arjuna berteriak senang dalam hatinya. Rupanya aksi dia berhasil. Tentunya bila ia tetap sabar, maka apapun bisa dilakukan. Arjuna memegang tangan kiri mantan isterinya, lalu menariknya sambil berkata,<br />
+<br />
+“Aku punya hadiah untuk kamu. Aku mau kasih kamu sekarang…”<br />
+Ia menarik mantan isterinya ke kontrakan sebelah. Selama ini Arjuna menabung selama beberapa bulan ini. Selama usahanya dalam merayu mantan isterinya. Pada hari sabtu kemarin, ia bertemu dengan pedagang keliling yang menjual pakaian. Kebetulan ia melihat daster. Daster itu jenisnya menggunakan karet sehingga dapat melar, namun ukurannya hanya ada yang lebih kecil satu nomer untuk mantan isterinya yang lumayan tinggi itu, bila dipakai Maria tentu akan memperlihatkan lekuk tubuhnya yang indah tanpa menyebabkan robek. Dibelinya daster itu, dikatakan Arjuna bahwa ia mau beli kado untuk teman. Padahal untuk mantan isterinya.<br />
+Arjuna mengambil daster itu dari lemari sambil berkata,<br />
+“kamu kan ga pernah punya daster kayak tetangga. Selama ini Arjuna perhatikan Maria Cuma pakai kain kalau mau tidur. Nah, Arjuna niatin untuk beli ini dengan menyisihkan sedikit uang makan siang Arjuna.”<br />
+<br />
+Maria agak curiga dengan pemberian Arjuna. Dicobanya daster itu dengan menempelkannya didepan tubuhnya, dan ternyata tidak sama dengan ukuran tubuhnya. Daster itu bermodel rok di atas lutut, namun karena ukurannya kecil, jatuhnya tepat di pahanya. Untung saja ada karetnya sehingga bila dipaksa dipakai tidak akan robek.<br />
+“kamu gak suka, ya?” tampak wajah Arjuna menjadi sedih. Maria berfikir mungkin karena Arjuna melihat reaksi dari dirinya yang terkejut.<br />
+“Oh, aku suka,” katanya untuk menghibur Arjuna.<br />
+“kamu pakai ya nanti malam? …”<br />
+Maria hanya mengangguk. <br />
+“Arjuna boleh lihat ya? Soalnya Seorang sahabat akan sangat bangga kalau sahabatnya memakai pemberiannya.”<br />
+Maria hanya mengangguk pelan.<br />
+Malamnya, ketika arjuna telah merebahkan diri di bale-bale, Maria masuk kamarnya. Arjuna langsung berlari ke atas lemari mengintip mantan isterinya. Maria membuka kainnya sehingga hanya memakai kutang dan celana dalam. Lalu dipakainya daster itu. Daster itu tidak bertali dan menunjukkan sedikit bagian dada dan agak banyak bagian punggung. Ketika bercermin, Maria melihat bahwa tali BH nya menyembul keluar, dan di bagian punggung tali Bh-nya terlihat sehingga tampak jelek.<br />
+Dengan cekatan tanpa membuka daster, Maria membuka Bhnya dan menaruhnya di tempat tidur. Barulah dapat dilihat seorang perempuan seksi memakai daster, dengan pentil terlihat menyembul dari balik kain dasternya. Maria merasa sedikit malu, karena yang dilihat di cermin tampak seperti bukan perempuan baik-baik, namun di lain pihak ia merasa amat seksi sehingga ia cukup lama bercermin dan melihat keadaannya dari berbagai sudut.<br />
+Arjuna yang tak sabar segera turun dari lemari dan mendatangi kamar mantan isterinya. Maria terkejut ketika didengarnya pintu kamar diketuk. Apakah mantan suaminya mau masuk? didengarnya Arjuna memanggilnya perlahan, maka agak ragu Maria membuka pintu.<br />
+“Wah….. kamu cantik sekali,” kata Arjuna ketika melihat Maria, “ dan Arjuna bangga Maria menjadi cantik karena pemberian Arjuna. Kok sepertinya Arjuna baru tahu ya ... kayaknya kamu inilah sebenarnya wanita tercantik di desa kita.”<br />
+Maria merasa jengah namun bahagia juga. Ia tidak curiga maupun heran, karena dipikirnya mantan suaminya memuji dia karena pertemanan saja. Maka Maria mendekati Arjuna sambil mencium pipi kirinya.<br />
+“Terimakasih ya, mas.”<br />
+“kok Cuma pipi? Kan kita cium bibir.”<br />
+Maria kemudian mencium bibir Arjuna.<br />
+“pipi kanan belum.”<br />
+Maria mencium pipi kanan Arjuna.<br />
+“sekarang giliran Arjuna, karena Maria mau memakai pemberian Arjuna, maka Arjuna juga sangat berterima kasih.”<br />
+Arjuna mencium kedua pipi mantan isterinya. Kali ini sudah tiga detik. Lalu diciumnya kembali bibir mantan isterinya. <br />
+Sedetik ... dua detik ... tiga detik ... empat detik.. Maria merasakan tubuhnya hangat karena ciuman bibir Arjuna yang lembut seakan menjalar ke seluruh badannya. Setelah lima detik Arjuna melepaskan bibirnya.<br />
+“Maria?”<br />
+“Ya?” jawab Maria dengan suara sedikit serak.<br />
+“Arjuna sebenarnya sayang banget sama Maria. Boleh kan kalo Arjuna mencium Maria kapan pun?”<br />
+“Maksud kamu?”<br />
+“Maksudnya ga hanya waktu Arjuna berpamitan mau pulang saja. Soalnya Arjuna pengen kasih liat bahwa Arjuna sungguh merasa Maria adalah teman yang sederajat.”<br />
+“Ya, Boleh” jawab Maria singkat agar tidak terlihat murahan.<br />
+<br />
+Arjuna kemudian mencium bibir mantan isterinya lagi. Mereka berangkulan semakin erat. Lalu setelah lima detik, Arjuna melepaskan bibirnya dan rangkulannya dan pamit untuk pulang. Sebenarnya ia buru-buru pergi karena tidak mau membuat mantan isterinya curiga dan akhirnya usahanya sia-sia.<br />
+<br />
+Ketika Arjuna bangun, mantan isterinya sedang menata piring untuk sarapan di bale-bale. Tubuhnya membungkuk ke depan. Arjuna menyapa mantan isterinya, lalu mencium pundak mantan isterinya. Ia mencium bau ketiak mantan isterinya secara jelas.<br />
+“Ih ngapain kamu cium pundak ku? Lagian aku kan belum mandi.”<br />
+“Katanya Arjuna boleh cium kapan aja. Dan biar Maria belum mandi tetap aja wangi, kok.”<br />
+“bau gini kok wangi? Ngaco!”<br />
+Maria lalu duduk di pinggir bale-bale. Arjuna yang pintar itu segera duduk di sebelahnya.<br />
+“Untuk Arjuna sih bau badan Maria itu wangi. Ga percaya?”<br />
+Arjuna mengangkat tangan mantan isterinya lalu membenamkan wajahnya di ketika mantan isterinya. Bau tubuh mantan isterinya kini menyerang hidungnya dan menguasai otaknya.<br />
+mantan isterinya yang kegelian menarik tubuhnya ke samping dan tertawa sambil berkata,<br />
+“dasar wong gemblung! Udah makan sana!”<br />
+Maka Arjuna makan dengan lahap. Setelah itu, seperti biasa, ia mencium pipi dan bibirnya mantan isterinya. Kali ini proses ciuman di bibir sudah lima detik. mantan isterinya mendorong kepala Arjuna perlahan dan berkata,<br />
+“Nanti kamu terlambat dapet angkot ke kota.”<br />
+Arjuna hanya tertawa, lalu mencium ketek mantan isterinya. Namun karena sedang tertutup, maka ia mencium bagian kiri atas dada mantan isterinya dan tangan kirinya tepat ditempat di mana ketek itu berada.<br />
+“Mending Maria jangan mandi deh sebelum sarapan,” kata Arjuna lalu bergegas berangkat.<br />
+<br />
+Setelah itu Maria tidak pernah mandi sebelum selesai sarapan yang menyebabkan Arjuna hanya bisa mengintip mantan isterinya mandi pada sore hari saja. Ada sedikit penyesalan, namun setidaknya dia dapat mencium mantan isterinya tidak hanya pipi dan bibir.<br />
+Aktivitas cium Arjuna menjadi bertambah. Kini bilamana mereka berduaan saja, maka Arjuna mencium pundak mantan isterinya, pipinya dan bibirnya. Pertama-tama hanya sekilas, namun karena mantan isterinya tidak marah, maka menjadi lebih lama. Namun untuk tidak mencurigakan, maka ciuman itu dilancarkan sekali-kali dan tidak beruntun. Arjuna segera mencari akal agar dapat menciumi mantan isterinya secara beruntun.<br />
+<br />
+BAB EMPAT<br />
+PERKEMBANGAN BIRAHI<br />
+<br />
+Suatu ketika mereka selesai makan siang, Maria duduk di pojok bale melihat ke arah luar rumah sementara Arjuna duduk di samping Maria. Maria sesekali menoleh ke belakang sementara berbicara dengan Arjuna mengenai pengalaman pedih perjuangannya ketika pertama sekali di cerai dan di usir oleh Arjuna. Maria rupanya sedang mengenang masa-masa sulit di waktu yang telah lalu.<br />
+Arjuna memeluk mantan isterinya dari belakang dan berkata,<br />
+“Maafkan aku ya, semua itu salahku yang telah membuat kamu jadi seperti ini….” lalu mulai mencium pundak mantan isterinya perlahan. Seperti biasa, Maria memakai kain yang dilibat di atas dadanya, BH hitamnya terlihat pada bagian tali. Maria terus berbicara, lalu Arjuna mencium lagi. Kemudian lagi. Jarak antara ciuman sekitar sepuluh detik. Makin lama secara perlahan jarak itu mengecil, hingga akhirnya Arjuna mulai menciumi pundak mantan isterinya berkali-kali bagaikan ayam sedang mematuki beras di tanah sementara mantan isterinya berbicara. Akalnya berbuah hasil juga. Kini Arjuna dapat menciumi pundak mantan isterinya secara beruntun.<br />
+<br />
+Setelah beberapa lama, sekitar lima menitan Arjuna mencumbu pundak mantan isterinya, barulah arjuna sadar bahwa mantan isterinya telah berhenti bicara. Arjuna buru-buru mengajak ngomong agar tidak dicurigai.<br />
+“Maria?”<br />
+“Ya?”<br />
+“Kalau sekarang, apakah Maria masih merasa sedih. Arjuna sekarang malah bukan sosok pria yang kaya ….”<br />
+“Tidak, mas. kalau dibanding dahulu, sekarang ini jauh lebih baik. Maria sesungguhnya senang hidup seperti sekarang. Makan dan tidur tenang, walaupun enggak berlebihan .... Udah dulu ngomong-ngomongnya, sebentar lagi sore nih. Maria belum masak sama beres-beres.”<br />
+<br />
+Maria beringsut pergi dari bale-bale. Arjuna kecewa, namun kekecewaannya sedikit terobati karena ia kini bisa menciumi mantan isterinya tidak hanya di pipi dan bibir, namun di pundaknya pula tanpa kena marah. Setidaknya ada kemajuan pada hari ini.<br />
+Keesokan harinya, Maria datang ke kontrakan arjuna lalu membangunkan Arjuna untuk mandi pagi. Arjuna terbangun, melihat mantan isterinya menatapnya. Sambil beringsut bangun, Arjuna memegang tangan kanan mantan isterinya mengunakan tangan kirinya dan berkata,<br />
+“Cium dong.”<br />
+“Ah, kamu belum mandi sama gosok gigi.”<br />
+“Ya udah arjuna cium pundak Maria aja.”<br />
+Arjuna mencium pundak mantan isterinya selama beberapa detik.<br />
+<br />
+“Udah ya. Kamu kan harus mandi dan sarapan.”<br />
+“Yaaaah…. Baru sebentar juga.”<br />
+Lalu Arjuna menciumi lengan mantan isterinya. Lalu dengan masih memegang pergelangan tangan kanan Maria, ia angkat tangan Maria dan ditaruh di pundak kirinya, lalu dibenamkannya mukanya di ketiak mantan isterinya yang belum mandi itu. Dihirupnya bau tubuh mantan isterinya dalam-dalam.<br />
+“Arjuna… Maria geli. Udah donk. Kamu belum mandi dan sarapan. Nanti kamu terlambat dapet angkot ke kota.”<br />
+“Yaaaah…… sebentar banget. Arjuna paling seneng menghirup bau badan Maria yang belum mandi. Harum banget sih. Besok bangunin Arjuna lebih pagi lagi ya?! Lagian Maria kok jam segini bangunin Arjuna?”<br />
+“Aku kan harus cuci perabot masak dulu sebelum kamu sarapan. Biar cepat bersih rumah.”<br />
+Arjuna justru memeluk tangan mantan isterinya. Kata Arjuna setelah beberapa saat,<br />
+“Arjuna ga mau lepasin. Lebih baik hari ini ga usah ke kota aja.”<br />
+“jangan donk. Kamu mau ngapain di rumah?”<br />
+“ciumin ketek kamu aja.”<br />
+“ngaco kamu. Ketek bau diciumin terus.”<br />
+“Harum kok. Pokoknya Maria harus janji besok bangunin Arjuna sebelum cuci perabotan.”<br />
+“Terserah kamu deh.”<br />
+<br />
+Setelah mandi, Arjuna mendapatkan mantan isterinya sedang di bale-bale mempersiapkan makanan untuk sarapan. Arjuna menghampiri mantan isterinya dan duduk disampingnya. Maria tersenyum. Dari samping, Arjuna melingkarkan sebelah tangannya ke pinggang mantan isterinya. Lalu seperti biasa, Arjuna mencium kedua pipi mantan isterinya masing-masing sekitar tiga detik diakhiri dengan kecupan yang menimbulkan bunyi. Lalu mereka berciuman di bibir. Biasanya sekitar lima detik. Tapi hari itu setelah lima detik, Arjuna memang melepaskan bibirnya sehingga menimbulkan suara kecupan lagi, namun kembali menempelkan bibirnya. Setelah lima detik Arjuna mengakhiri lagi dengan kecupan, namun kembali diciumnya bibir mantan isterinya.<br />
+Akhirnya setelah kecupan ketiga, Maria mendorong kepala mantan suaminya dan berkata,<br />
+“Kamu semangat banget hari ini cium Maria.”<br />
+“Habis, Arjuna semakin hari semakin sayang Maria.”<br />
+"Sebagai sahabat ... " Maria melotot.<br />
+"iya sebagai sahabat ... " jawab Arjuna menunduk.<br />
+<br />
+“Ya udah, makan sana.”<br />
+“Tapi cium ketek Maria kan belum….”<br />
+“Nanti kamu kesiangan. Lagian, kok kamu seneng banget ciumin ketek Maria?”<br />
+“Kan udah Arjuna bilang, Arjuna suka sekali sama bau badan Maria yang belum mandi. Karena inilah bau badan Maria yang asli. Ga ada bau tambahan kayak sabun. Kalo mencium bau badan Maria ini rasanya Arjuna sempurna menjadi sahabat dekatnya Maria.”<br />
+<br />
+“Ya udah. Jangan lama-lama. Nanti kamu kesiangan.”<br />
+Maria mengangkat tangan kirinya ke atas. Tangan yang dekat dengan Arjuna. Arjuna berkata,<br />
+“Kamu nanti pegal. Maria tiduran aja sebentar.”<br />
+“Aduh. Sempit di bale-bale. Banyak perabotan. Piring, periuk sama gelas.”<br />
+“Yah…. Di kamar Maria aja, ya? Sebentar.”<br />
+<br />
+Pertama-tama mantan isterinya enggan, namun Arjuna yang pintar itu memelas dan dengan alasan ingin lebih dekat dan mengenal sahabatnya, dan salah satu caranya adalah mengenal bau tubuh sahabatnya, selain itu ciuman juga akan semakin mendekatkan dan juga menambah rasa saling percaya diantara mereka. Akhirnya mantan isterinya mengalah. Selain itu, Maria setiap kali mendengar Arjuna berbicara mengenai ciuman, ada perasaan aneh di dalam dadanya. Dan mungkin karena memang Maria sendiri ingin dekat dengan mantan suaminya itu, makanya Maria tidak pernah keberatan bila mantan suaminya menciumi punggung, pipi, dan bibirnya.<br />
+<br />
+Setelah menutup makanan di bale-bale dengan tudung saji. Mereka berdua masuk kamar. Maria rebah di sana di tengah ranjang. Arjuna rebah disampingnya dan mulai menciumi ketek kiri mantan isterinya. Berhubung mantan isterinya bersikeras bahwa hanya lima menit saja, maka Arjuna memutuskan untuk tidak hanya mengeksplorasi ketiak mantan isterinya. Ciuman di ketek itu dilanjutkan Arjuna dengan mulai mencium ke arah dada mantan isterinya.<br />
+Ketika Maria merasakan bibir Arjuna mulai meninggalkan ketiaknya dan kini berjalan menyusuri pinggir dadanya dan akhirnya menyusuri bagian atas dadanya, ia berkata,<br />
+“Mas, kamu ngapain?”<br />
+“Mau cium ketiak sebelah kanan,” kata Arjuna lalu meneruskan perjalanan bibirnya itu yang kini sudah di tengah bagian atas payudara mantan isterinya yang terbungkus kain. Maria merasakan kulitnya bagai tersengat listrik arus rendah, dan kepalanya bagaikan berputar merasakan pergerakan nafas Arjuna.<br />
+“Maria?” kata Arjuna tiba-tiba.<br />
+“ya?”<br />
+“Kemarin ada teman yang bilang bahwa ada wanita yang manis dan ada yang tidak. Menurutku Maria termasuk yang manis, kan ya? Pasti doongg.”<br />
+“Ah, Maria itu biasa aja. Gak terlalu manis.”<br />
+“Ah, bohong. Coba deh…..” kata Arjuna dan tiba-tiba Arjuna menjilat payudara kiri bagian atas Maria. Maria tersentak kaget dan menarik nafas cepat ketika merasakan lidah Arjuna menyapu payudara kanannya itu.<br />
+<br />
+“Wah. Benar, kan. Maria rasanya manis.”<br />
+Maria harus menarik nafas dulu baru menjawab,<br />
+“Kamu itu ya mas. Jelas-jelas Maria asin begini karena belum mandi.”<br />
+“enggak kok. Nih buktinya…..” Arjuna menjilat lagi, kini agak ke tengah, “ tuh kan. Manis lho.”<br />
+Maria kini merangkul kepala Arjuna dengan tangan kirinya secara perlahan.<br />
+“Udah, mas. nanti kamu kesiangan.”<br />
+<br />
+Namun Arjuna kembali menjilat dada mantan isterinya, kini lembah diantara kedua bukitnya yang disapu oleh lidah Arjuna. Arjuna yang mulai berahi kini semakin berani. Sebelumnya ia menjilat Maria sekali-sekali. Kini setelah lidahnya mencapai pinggir bukit sebelah kanan mantan isterinya, ia mulai menjilati daerah itu dengan sapuan lidah yang cepat.<br />
+Maria merasa tiba-tiba dilanda birahi. Dan ia tiba-tiba merasa takut. Mengapa ia birahi kembali pada mantan suaminya? Maka ia segera mendorong Arjuna dan berkata,<br />
+“Udah, mas. kamu bakal kesiangan.”<br />
+“Yaaah…… ketek kanan belum….”<br />
+“Udah, nanti aja…..”<br />
+<br />
+Arjuna sebenarnya sudah birahi dan tidak ingin menghentikan aksinya. Namun ia tahu bila ia bersikeras, maka mantan isterinya akan marah. Oleh karena itu, ia segera menghentikan aksinya lalu tersenyum dan berkata,<br />
+“Kamu udah janji, lho.”<br />
+Dengan perkataan itu ia meninggalkan kamar mantan isterinya untuk sarapan pagi.<br />
+<br />
+Maria tidak tahu harus berbuat apa. Karena hal yang dimulai hanya untuk membuat ia dan suaminya menjadi teman dekat, kini seakan mulai bergerak ke arah yang lain. Maria mulai merasakan nafsu birahi ketika suaminya mulai menjilati dada atasnya. Ia bingung. Ia tidak ingin merasakan birahi kepada suaminya lagi, ia harus menolak dan melarang Arjuna bila ingin menjilatnya lagi. Tapi ia takut bila dilarang, maka persahabatan mereka yang sudah terjadi, juga akan lenyap begitu saja.<br />
+<br />
+Maria adalah perempuan desa yang mempunyai pikiran yang sederhana. Tidak ada sedikitpun kecurigaannya kepada Arjuna. Ia tidak berfikiran bahwa memang sebenarnya mantan suaminya hendak membuatnya birahi. Ia percaya, Arjuna memang ingin dekat dengannya sebagai sahabat. Jadi, apa yang harus dilakukan olehnya agar tidak memiliki nafsu itu?<br />
+Siang hari Arjuna pulang. Maria sedang di bale-bale termenung memikirkan segalanya. Seperti biasa Arjuna duduk di sampingnya lalu mencium dan mengecup pipi dan bibirnya. Namun kali itu Arjuna berkata,<br />
+“akhir-akhir ini Arjuna merasa Maria sudah ga mau sahabatan sama Arjuna lagi.”<br />
+“Loh, kok kamu berkata begitu?”<br />
+“Pertama. Tadi pagi Maria mengusir Arjuna dari kamar …”<br />
+“Tapi Mas. kamu kan harus berangkat. Maria ga mau mas terlambat dan tidak dapat angkot,” sela mantan isterinya.<br />
+“Dengerin Arjuna sampai habis dulu, dong. Pertama, Maria mengusir Arjuna dari kamar tidur. Kedua, selama ini Arjuna mengecup Maria, Maria hanya diam dan tidak mengecup balik. Arjuna takut sebenarnya Maria tidak ingin menjadi sahabat Arjuna. padahal Arjuna sangat ingin jadi sahabat Maria.”<br />
+“Aku juga ingin jadi sahabat mas. benar, kok.”<br />
+“Kalau gitu Maria juga kecup dong.”<br />
+Arjuna kemudian mencium bibir Maria lagi. Dikecupnya mantan isterinya, namun mantan isterinya terlambat mengecup balik.<br />
+“Tuh, kan.”<br />
+“Abis kamu cepat banget.”<br />
+“Lho ... Kan harusnya kerasa, setiap kali mau Arjuna kecup, bibir Arjuna kan menekan bibir Maria. Coba lagi deh.”<br />
+Arjuna mencium bibir mantan isterinya lagi. Kali ini Ia merangkul Maria. Maria memusatkan perhatian pada tekanan bibir Arjuna pada bibirnya. Dirasanya bibir mantan suaminya itu menekannya, maka Mariapun menekan bibirnya untuk membalas kecupan itu. Akhirnya mereka berdua mengecup dan karena kedua bibir saling mengecup, bunyi yang dihasilkan lebih keras dari suara kecupan sebelum-sebelumnya.<br />
+“Nah, gitu dong. Ini kan artinya kita sahabatan yang benar-benar sederajat. Tapi Maria masih kaku nih. Harus banyak-banyak dilatih.”<br />
+“Makan siang dulu, mas.”<br />
+“Sebentar aja, kok.”<br />
+<br />
+Maria merasakan kecupan Arjuna yang basah, karena sebelum berciuman Arjuna menjilat bibirnya sendiri untuk membasahi bibirnya itu. Arjuna menyuruh mantan isterinya juga untuk membasahi bibirnya sendiri, agar enggak kering. Soalnya kalo kering ga enak, kata Arjuna.<br />
+Bibir Arjuna terasa hangat dan basah. Ciuman dan kecupan Arjuna pertama-tama terasa perlahan dan lambat. Makin lama tekanan bibir itu makin diperkeras. Tak sadar, Maria mengikuti irama permainan bibir mantan suaminya itu. Birahi Maria kini mulai menanjak lagi.<br />
+Sejenak Arjuna menghentikan ciumannya dan Maria sedikit kecewa. Kata Arjuna,<br />
+“Bibir kamu kering lagi tuh. Biar Arjuna yang basahin deh.”<br />
+Lalu Arjuna mencium Maria lagi, namun kini dirasakan lidah Arjuna menyapu bibirnya. Maria mengecup lidah itu.<br />
+“Sekarang gantian Maria yang membasahi bibir Arjuna,” kata pria itu.<br />
+Dengan kaku Maria menyapu lidahnya ke bibir mantan suaminya sekali. Namun Arjuna menyuruh mantan isterinya terus membasahi bibirnya. Akhirnya Maria mulai menjilati bibir Arjuna secara perlahan. Tiba-tiba Maria merasa bibir Arjuna menjepit lidahnya secara perlahan. Listrik birahi tiba-tiba menyetrum dari lidahnya kebawah terus ke kemaluannya sehingga kini mulai basah dan lututnya menjadi lemas. Dijulurkannya lagi lidahnya ke mulut mantan suaminya dan Arjuna mengenyot lidah mantan isterinya itu dengan perlahan, membuat Maria terbuai oleh nafsu birahi sehingga kini ia mendekap kepala mantan suaminya. Maria kini membalas mengenyoti bibir Arjuna.<br />
+<br />
+Keringat mereka mulai deras membasahi tubuh mereka.<br />
+Arjuna tahu kapan harus berhenti. Dia pikir mungkin saja sekarang ia bisa menggauli mantan isterinya, tapi prosesnya terlalu cepat. mantan isterinya harus secara perlahan menginginkannya. Bila terlalu cepat, maka mungkin hubungan ini akan terjadi sekali saja, sedangkan Arjuna ingin mantan isterinya kembali menjadi miliknya selama-lamanya.<br />
+Maka Arjuna lalu menghentikan aksinya. Lalu berkata,<br />
+“Arjuna senang sekali. Kini kita udah jadi sahabat dekat. Yang kurang Cuma cium ketek aja.”<br />
+mantan isterinya yang terengah-engah hanya memejamkan matanya. Beberapa saat kemudian mantan isterinya membuka mata lalu mengangkat kedua tangannya. Arjuna kemudian menjilati ketiak kiri mantan isterinya yang kini sudah agak keringat dan sudah mengeluarkan bau badan lagi. mantan isterinya menggelinjang kegelian namun hanya tertawa tanpa melarang. Setelah itu Arjuna menghentikan aksinya.<br />
+<br />
+Malam itu ada perubahan, Arjuna pulang dari kota, Ketika pulang arjuna menjumpai Maria dan berlagak kalau kunci rumahnya ketinggalan di kota. <br />
+“Ya sudah. Boleh gak kalau aku numpang tidur di bale-bale luar.” minimal lebih dekat daripada tidur disebelah pikir Arjuna<br />
+“Jangan, Mas. Nanti kamu malah sakit kena angin malam. kamu kan ga biasa tidur di luar.”<br />
+“Terus bagaimana?”<br />
+Maria berfikir keras, dan akhirnya setelah hening beberapa saat Maria menjawab.<br />
+“Ya sudah Biar mas tidur dikamar aku saja ... tapi ingat jangan macem-macem ...”<br />
+Arjuna merasakan seperti di surga ketujuh. Usaha-usahanya pasti akan berhasil dengan sukses dengan kemungkinan di atas 90%, pikirnya.<br />
+<br />
+Jam sembilan malam biasanya Arjuna masuk kamar. Sementara mantan isterinya masuk kamar pukul sepuluh atau lebih. Kini mereka berdua berbagi kamar, Arjuna mengharapkan mantan isterinya seperti biasa akan berganti daster. Maka ditunggunya mantan isterinya dengan cara ia pura-pura membaca laporan kantor di kamar tidur. Selain itu, kini ia telah siap dengan memakai sarung tanpa CD dengan kaos kutang saja.<br />
+Ketika mantan isterinya masuk, mantan isterinya berkata,<br />
+“Sudah. Lekas tidur.”<br />
+Arjuna meletakkan buku laporannya di meja di samping tempat tidur. Lalu menunggu dengan harap-harap cemas. Namun, mantan isterinya malah naik ke tempat tidur.<br />
+“Loh? Selama ini Maria sudah bohongin Arjuna ya?”<br />
+“Maksud kamu?”<br />
+“Arjuna sudah beliin daster, ternyata tidak dipakai.”<br />
+<br />
+Padahal Arjuna tahu Maria selalu memakai daster. Cuma mungkin sekarang ia agak risih karena tidur bareng mantan suaminya mengenakan daster yang kecil itu. Maria jadi bingung harus bagaimana. Namun karena takut mantan suaminya kecewa, maka ia bilang bahwa ia selalu pakai, dan hari ini lupa karena mengurusi rumah yang berantakan.<br />
+“Ya sudah. Kamu balik badan dulu. Maria mau pakai daster.”<br />
+“Emangnya kenapa?”<br />
+“Aku kan malu.”<br />
+“Malu? Kalo sama orang lain boleh dan harus malu. Tapi sama mantan suami sendiri masa malu?”<br />
+Maria menjadi serba salah. Tapi dia selalu kalah debat sama mantan suaminya. Maka, ia membuka lemari di mana tergantung daster itu. Dibukanya kainnya. Arjuna segera ngaceng melihat tubuh mantan isterinya yang hanya berbalutkan BH dan celana dalam putih. Tubuh mantan isterinya yang sudah sering dilihatnya itu tampak semakin menggiurkan bila dilihat langsung tanpa melalui lubang intip.<br />
+Ketika mantan isterinya telah selesai memakai daster dan membalikkan badannya Arjuna berkata lagi,<br />
+“Kok kelihatannya jelek ya daster itu jadinya, karena ada tali BH di balik daster.”<br />
+“Iya, emang keliatan jelek.”<br />
+“Jadi selama ini Maria selalu pakai BH di balik daster?”<br />
+Maria terdiam sebentar, namun karena dia adalah orang kampung yang jujur, akhirnya diberitahukanlah kepada arjuna bahwa sebenarnya ia tidak pernah pakai BH di balik daster selama ini.<br />
+“Wah, kalo gitu jangan pakai BH dong. Masa kamu jadi keliatan aneh gini. khan Maria sendiri juga merasa jelek kalau ada BH gitu.”<br />
+Maria menghela nafas. Akhirnya dengan keahlian seorang perempuan, ia membuka BH-nya langsung tanpa membuka daster. Arjuna agak kecewa karena dikiranya mantan isterinya akan buka daster dulu. Lalu Maria merebahkan dirinya di tempat tidur.<br />
+<br />
+Arjuna tidur menyamping mengarah kepada mantan isterinya sementara Maria tidur telentang. Arjuna mengangkat tangan kanan mantan isterinya dan memeluk pinggang Maria kemudian menempelkan hidungnya di ketiak kanan Maria yang ternyata sudah tidak berbulu dan mulai menjilati daerah itu.<br />
+Maria kegelian namun berkata sambil menahan tawa,<br />
+“Kamu apaan sih jilat-jilat kayak anjing.”<br />
+“Ah Maria ... tadi siang juga kita jilat-jilatan lidah kayak anjing juga….”<br />
+Maria merasa jengah dan membiarkan mantan suaminya menjilati ketiak kanannya. Kemudian sambil berkata bahwa Maria harum, Arjuna mulai menciumi pundaknya. Tangan kiri Arjuna mulai menggeser tali daster Maria perlahan sambil terus menciumi.<br />
+“Kok talinya dibuka?” tanya Maria.<br />
+“Abis….. menghalangi bibir Arjuna. Ga enak kan cium kain.”<br />
+Melihat Maria tidak marah, Arjuna menarik tali itu hingga jatuh dari pundak mantan isterinya dan meneruskan menciumi pundak dan kini menjalar ke leher. Maria otomatis merangkul kepala Arjuna sehingga kini tali yang tadi jatuh, kembali ke pundaknya. Arjuna mendapat akal, lalu menciumi pundak mantan isterinya lagi. Tiba-tiba Arjuna berhenti dan berkata,<br />
+“Yah…… kena tali lagi. Talinya balik lagi waktu Maria mengangkat tangan. Cape deh….”<br />
+Maria yang tadinya mulai terangsang jadi kehilangan rangsangan itu lalu menjawab enggan,<br />
+“Terus kenapa?”<br />
+“Maria pakai kain lagi aja deh…… biar ga rese…. Biar Arjuna bisa cium pundaknya tanpa kena tali melulu.”<br />
+Lalu Arjuna menarik badannya dan duduk di samping mantan isterinya. Maria merasa repot sekali. Tadi disuruh pake daster, sekarang disuruh pake kain lagi. Ribet amat nih orang.<br />
+Maria berdiri ke arah gantungan baju dan membuka dasternya. Arjuna dapat melihat kembali punggung mantan isterinya yang telanjang. Ketika mantan isterinya mengambil BH, Arjuna berkata,<br />
+“Ga usah. Tar Arjuna cium tali BH malah….”<br />
+<br />
+Maria akhirnya memakai kainnya dan dilipatnya disamping badannya. Arjuna sebenarnya ingin memeluk mantan isterinya dari belakang sehingga mantan isterinya tidak sempat memakai kain, namun arjuna berfikir bahwa kini belum saatnya. Maka dibiarkannya mantan isterinya memakai kain lagi. Jangan sampai mantan isterinya tahu bahwa sebenarnya Arjuna ingin sekali menyetubuhinya.<br />
+<br />
+Maria rebahan di samping Arjuna yang telentang, sementara Arjuna dengan sigap memeluk perut mantan isterinya dengan tangan kanan. Lalu mulai menciumi leher samping mantan isterinya lagi. lalu turun ke bagian atas dada mantan isterinya yang menjendol karena tertutup kain.<br />
+“Arjuna, “ bisik Maria,” Maria kok rasanya aneh ya. Kamu itu ciumin Maria kayak gini kok kita jadi kayak sepasang kekasih?”<br />
+Arjuna menegakkan kepalanya. Katanya, “Maria. Kita ini lebih dekat lagi hubungannya dibanding sepasang kekasih. Kita kan mantan isteri dan suami. Maka, kalau kekasih itu kayak begini, kenapa mantan isteri sama suami ga boleh dekat kayak begini juga? Kekasih itu saling menyayangi, kan?”<br />
+“Iya sih…. Tapi kan beda…..”<br />
+“Maria sayang Arjuna, ga?”<br />
+“Ya sayang lah.”<br />
+“Arjuna sayang sama Maria. Nah kalau kita sama-sama sayang, bukankah saling mengasihi?”<br />
+Maria terdiam. Hal seperti ini agak berat bagi pikiran otak perempuan desa.<br />
+Arjuna berkata lagi,<br />
+“Kekasih kan berarti orang yang mengasihi. Artinya kalau Maria mengasihi Arjuna dan Arjuna juga mengasihi Maria, artinya kan kita kekasih ya?”<br />
+Akhirnya Maria berkata, “Aduh, ga tahu deh. Iya kali. Maria jadi pusing.”<br />
+“Nah, Maria sendiri ngaku. Sekarang kita berdua adalah kekasih. Maria mau khan jadi kekasih Arjuna ?”<br />
+“Iya deh,” kata Maria dengan berat hati.<br />
+Arjuna beringsut menindih seluruh tubuh mantan isterinya.<br />
+<br />
+Maria menghela nafas karena tubuhnya ditindih mantan suaminya lalu bertanya, “kamu mau ngapain?”<br />
+“Cium bibir kekasih…”<br />
+Arjuna mencium bibir Maria sambil tangannya diselusupkan di bawah tubuh Maria untuk memeluknya. Maria secara instingtif juga memeluk Arjuna dan mendekap kepala mantan suaminya itu.<br />
+Arjuna mulai mengecup-ngecup bibir mantan isterinya dan Maria pun membalas, karena Maria tahu kalau ia tidak mengecup balik maka Arjuna akan protes. Kecupan bibir mereka mula-mula perlahan, namun makin lama semakin mesra. Tekanan bibir mereka makin keras dan lama. Situasi memanas karena ciuman mereka semakin hot dan berani. Tak lama terdengar suara kecupan kecil susul menyusul ketika bibir mereka saling diadu. Suara kecupan itu makin lama makin keras dan basah.<br />
+<br />
+Arjuna mulai menjilati mulut Maria sementara Maria mengecap-ngecap bibir dan lidah Arjuna.<br />
+“Coba julurkan lidah Maria ...”<br />
+Maria menjulurkan lidahnya dengan canggung yang disambut dengan sedotan bibir mantan suaminya. Lidah Maria menyapu-nyapu perlahan dan malu-malu, sementara Arjuna dengan nafsu balas menjilat dan sesekali menyedot lidah mantan isterinya. Lama-kelamaan birahi Maria bertambah tinggi sehingga kini jilatan dan kecupan bibirnya tak kalah serunya dengan mantan suaminya. Tiba-tiba, karena tidak tahan lagi, berhubung sudah lama tidak dinafkahi secara batin oleh mantan suaminya, Maria membalikkan badannya sambil memeluk erat mantan suaminya sehingga kini Maria yang menindih mantan suaminya. <br />
+<br />
+Di dorongkan tangannya sehingga pelukan mereka berdua lepas, setengah duduk Maria memposisikan selangkangannya sehingga kini menekan bagian bawah tubuh mantan suaminya. Sarung mantan suaminya telah tertarik hingga kontolnya mencuat, namun karena diduduki, maka kini posisinya terhimpit. Memek Maria yang terbungkus celana dalam kini menekan bagian bawah batang kontol Arjuna.<br />
+Maria segera merebahkan diri lagi lalu mencaplok mulut mantan suaminya yang tampak sedikit terkejut karena tindakannya. Arjuna serasa di surga ke tujuh. Ia sempat kaget badannya diputar sehingga sekarang ia yang telentang. Namun ketika ia baru hendak bertindak, dirasakan kontolnya menempel ke sesuatu yang halus namun basah. Rupanya celana dalam mantan isterinya yang basah oleh cairan kewanitaan. Tiba-tiba pula Maria menciuminya lagi.<br />
+Maria harus sedikit melengkungkan tubuhnya agar dapat mencium arjuna dalam posisi ini. Namun pikiran Maria tidak terlalu memperhatikan hal ini. Nafsu birahi perempuan ini sudah menguasai jalan pikirannya. Sambil menggoyangkan dan menekan pantatnya, ia merasakan sensasi klitorisnya digeseki sepanjang batang kontol mantan suaminya yang lumayan besar. Maria menjadi liar bagai binatang buas. Ia mengentoti kontol mantan suaminya walaupun dibatasi celana dalam. Birahi yang terbakar tidak memikirkan apa-apa lagi selain seks. Segala janji dan prinsip yang penah di ikrarkannya pun dilupakan.<br />
+<br />
+Arjuna tak kalah senang. Ia mengimbangi gerakan selangkangan mantan isterinya dengan goyangan pantatnya sendiri. Sementara keringat mereka berdua kini telah membasahi sekujur tubuh mereka.<br />
+Tiba-tiba mantan isterinya melenguh keras lalu menekan selangkangannya dalam-dalam. Arjuna merasakan celana dalam mantan isterinya kini sudah lepek sekali dan hangat terasa di kontolnya. Ia pun juga merasa akan ejakulasi. Spermanya menghambur ke segala arah membasahi kain mantan isterinya di bagian perut dan juga celana dalam mantan isterinya.<br />
+Akhirnya Maria tak bergerak namun masih menindih tubuh Arjuna. Bibir mereka bersatu kelelahan. Tak lama mantan isterinya membaringkan dirinya di sebelah Arjuna lagi.<br />
+<br />
+“Maafkan Maria, mas. Maria sudah lama tidak merasa begini…..”<br />
+Arjuna memotong, “ Arjuna sayang Maria. Apapun yang Maria mau, akan Arjuna lakukan. Maria senang?”<br />
+Maria hanya mengangguk. Mereka diam beberapa saat.<br />
+“Tapi ini salah, mas.”<br />
+“ga ada yang salah. Maria adalah kekasih Arjuna. Hal itu Maria sendiri yang mengakui. Kalau Maria senang dengan begini, maka Arjuna ga akan menolak. Yang penting Maria senang….”<br />
+“Tapi…..”<br />
+“Ga ada tapi-tapi…… Maria sekarang kekasih Arjuna, kan?”<br />
+Maria mengangguk.<br />
+“Ga ada yang perlu dibicarakan lagi. Ga ada yang perlu dimaafkan.”<br />
+“Maria jadi pusing. Maria tidur dulu ya mas ….”<br />
+<br />
+Maria membalikkan badannya hingga membelakangi Arjuna tanpa berusaha membersihkan bajunya maupun tempat tidur dari peju mantan suaminya. Arjuna memegang pundaknya. Katanya,<br />
+“Maria….”<br />
+Arjuna takut sekarang Maria menjadi tak ingin lagi bersama dirinya. Katanya,<br />
+“Maria marah sama Arjuna?”<br />
+Tapi Maria tidak menyahut. Gawat, pikir Arjuna. Ia merangkul mantan isterinya dari belakang. Dipanggilnya mantan isterinya lagi. Tapi tetap tak ada jawaban. Harus ditest, pikir Arjuna. Maka ia mencium punggung mantan isterinya. Tak ada jawaban. Dicupangnya leher mantan isterinya. mantan isterinya menggeliat dan mendesah tapi tidak ada jawaban. Kalau mantan isteri marah dan tak mau lagi, tentu Arjuna akan dibentak, tapi mantan isterinya diam. Dengan penuh perasaan lega Arjuna memejamkan matanya dan ia segera tertidur.<br />
+<br />
+Paginya Arjuna dibangunkan Maria yang telah memakai kain yang lain. Maria bergegas pergi namun Arjuna mengejarnya sampai di dapur dan Maria sedang merapihkan lemari piring yang seharusnya tidak perlu dirapikan.<br />
+“Maria marah?” tanya Arjuna.<br />
+Maria hanya menggeleng. Arjuna memeluk mantan isterinya dari belakang. Tidak ada tanggapan. Arjuna menarik tangan mantan isterinya dengan hati yang kesal. mantan isterinya tidak berkata apa-apa pula bahkan mantan isterinya tampak berusaha tidak memandang mata Arjuna. Arjuna membawa Maria ke kamar. Arjuna mendorong tubuh Maria ke atas tempat tidur. Maria duduk di pinggir tempat tidur sambil menunduk. Arjuna duduk di tengah tempat tidur di sebelah Maria, lalu memeluk mantan isterinya dari belakang lalu menarik tubuh Maria untuk berbaring di tempat tidur sejajar dengan dirinya. Maria beringsut berbaring di ranjang dengan menaruh kedua kakinya ditempat tidur dan kini mereka berbaring berhadapan.<br />
+<br />
+Maria hanya diam saja bahkan kini matanya terpejam. Arjuna menciumi muka Maria lalu diciumnya bibir mantan isterinya. Tak disangka kali ini Maria balas mencium bibirnya. Mereka akhirnya berpelukan menyamping dengan dada saling berhimpitan. Setelah puas berciuman dan bertukaran ludah Arjuna mulai menjilati kembali leher mantan isterinya yang kini telah berkeringat. mantan isterinya menggelinjang sambil mendesah. Desahan Maria berbeda dengan tadi malam. Tadi malam mereka berusaha meredam suara, Kini desahan Maria dapat terdengar dengan jelas.<br />
+<br />
+Arjuna mengenyoti leher Maria. mantan isterinya itu mengerang-ngerang dan tiba-tiba saja berkata,<br />
+“Aaahhhhhh……… udah Arjuna … geli leher Maria….. kamu nakal……… Maria geli……”<br />
+Arjuna merasakan sebelah kaki mantan isterinya yang bebas kini melingkari pahanya. Dari balik sarungnya, Arjuna merasakan mantan isterinya mulai menekan-nekan burungnya dengan selangkangannya. Arjuna segera menarik sarungnya sehingga kontolnya bebas. Arjuna kini merasakan celana dalam mantan isterinya yang kering menekan batang kontolnya. Tibalah ide brilian yang lain.<br />
+“Aduh ... celana dalam Maria masih kering, titit Arjuna sakit. Buka aja deh celana dalamnya …”<br />
+“Jangan, mas. begini aja,” kata Maria di antara desah dan erangannya.<br />
+“Please Maria ... Sakit nih…….”<br />
+Maria yang sedang birahi, karena rupanya dari bangun pagi terbayang orgasme semalam, tetap menggeseki burung mantan suaminya sambil memeluk erat mantan suaminya, seakan tak mendengar suara mantan suaminya.<br />
+<br />
+“Maria jahat….. ga sayang Arjuna! Gimana kalau luka?”<br />
+Mendengar kata-kata Arjuna yang sedikit tinggi, Maria menjadi berfikir. Kasihan juga mantan suaminya kalu burungnya luka. Walaupun berpikir, Maria terus menggeseki burung mantan suaminya itu. Akhirnya, dengan gerakan cepat Maria mengangkat kainnya, melepaskan celana dalamnya, lalu menduduki kontol mantan suaminya lagi.<br />
+Arjuna menjadi sangat girang. Dirasakan batang kontolnya ditekan oleh sesuatu yang hangat dan sedikit lembab. Kedua tangan Arjuna meraih pantat Maria. Senangnya ketika ia merasakan pantat mantan isterinya yang telanjang dikarenakan kain Maria telah ditarik sampai ke pinggang.<br />
+Arjuna menggoyangkan pantatnya juga. Kini mereka berdua saling menggesekkan alat vital-masing-masing. Mulut Arjuna pun sudah mulai bergerilya lagi.<br />
+Bila kemarin malam Arjuna merasa di surga dunia, kini Arjuna merasa bagaikan di surga ke tujuh. Kontolnya dapat merasakan bibir memek Maria yang basah bergerak-gerak dan melicinkan batang kontolnya. Dan dinding di balik bibir vagina itu begitu hangat dan licin juga basah. Di remasnya pantat telanjang Maria dengan kedua tangannya sementara mulutnya asyik menyedot-nyedot dan mencupangi leher mantan isterinya.<br />
+“Aaah…… ahhh……. aduhhh ...” Maria berteriak-teriak sendiri.<br />
+Dengan kedua tangannya, Maria memegang wajah mantan suaminya lalu mencium bibirnya penuh nafsu. Arjuna merasakan lidah mantan isterinya yang basah menerobos mulutnya, tak mau kalah Arjuna membalas dengan lidahnya. Lidah mereka kini berperang di dalam dan luar bibir mereka, sementara bibir vagina Maria juga sedang membungkus kontol Arjuna, kedua organ intim mereka juga sedang bertempur untuk mencapai puncaknya.<br />
+Arjuna kini menggerakkan tangannya ke atas. Di pegangnya kain mantan isterinya pada bagian atas, lalu dibetotnya kebawah keras-keras sehingga kain mantan isterinya kini berjumbel di pinggang. Maria kini telanjang. Kedua tangan Arjuna disisipkan di antara tubuh mereka, lalu mulai meremasi payudara mantan isterinya. Maria melenguh keras lalu melepas ciuman.<br />
+“iyaa….. aaduuhhhh……. jangan di remas tetek nya, mas ...”<br />
+mantan isterinya kini duduk di atas kontol Arjuna dengan kedua tangan memegang tangan Arjuna yang sedang meremasi payudaranya.<br />
+Arjuna melepaskan tangan kirinya dari payudara mantan isterinya. Kini dapat dilihatnya tetek mantan isterinya yang sebesar parutan buah kelapa namun berbentuk tetesan air itu secara dekat. Kulit toket mantan isterinya basah oleh keringat sehingga tampak mengkilat. Pentil mantan isterinya sudah membesar sementara bagian dasar pentil itu sudah mengecil, sehingga tampak bagai ujung belakang pulpen yang tegak menantang. Arjuna tak tunggu waktu lama mengenyot puting kanan mantan isterinya itu.<br />
+<br />
+“Iyaaaaahhhhh…aduh .. duh..duh ….. koq malah di isep teteknya, mas………..”<br />
+Arjuna merasakan tetek mantan isterinya agak asin dan ada juga bau tubuh yang terbawa di sana. Sungguh sangat lezat. Hisapan Arjuna membuat Maria semakin kencang menggoyangkan pantatnya dan kini selangkangan mereka berdua telah basah kuyup oleh cairan kewanitaan Maria dicampur dengan keringat mereka berdua. Bau tubuh Maria memenuhi ruangan.<br />
+Keringat mereka bercampur lagi. Toket kanan Maria telah basah oleh campuran keringat mereka berdua, juga ludah Arjuna. <br />
+Goyangan pantat Maria semakin lama semakin hebat. Selangkangan Maria dan Arjuna sudah licin dan basah karena cairan kewanitaan Maria. <br />
+<br />
+Arjuna pun mengimbangi goyangan mantan isterinya dengan menekan-nekan batang kontolnya sepanjang kemaluan mantan isterinya yang sangat hangat. Bahkan Arjuna merasakan memek mantan isterinya mengeluarkan cairan kental, licin dan sedikit panas yang menambah hot suasana di selangkangan mereka berdua.<br />
+Akhirnya Maria menekan kontol Arjuna dengan keras sambil berteriak kecil,<br />
+“Aku mau ... ahhhhhhhhh ... ”<br />
+Bersamaan dengan itu, Arjuna merasakan lubang vagina mantan isterinya itu bagaikan memancarkan air panas yang membuat dirinya juga tak kuasa menahan diri. Sambil menyedot puting susu Maria, Arjuna memeluk erat tubuh telanjang mantan isterinya sambil menekan pantatnya ke atas sehingga batang kontolnya dan memek mantan isterinya bergesekan dengan kuat seakan sedang adu kekuatan untuk saling menjatuhkan.<br />
+Kontol Arjuna berkedut-kedut keras menumpahkan sperma yang menciprati selangkangannya dan sekujur garis vagina mantan isterinya. Selama beberapa saat mereka menikmati orgasme yang mereka rasakan. Lalu kemudian Maria merebahkan diri di samping kiri Arjuna kelelahan. Telapak tangan kanannya ditaruh di dahi. Ia memejamkan mata dan beristirahat setelah orgasme yang bahkan lebih hebat dari semalam.<br />
+<br />
+BAB LIMA<br />
+PERTAMA KALINYA<br />
+<br />
+Lima menit kemudian Maria merasakan seseorang menarik kainnya yang melingkari pinggangnya. Dilihatnya Arjuna yang sekarang telanjang tanpa sarung memegang kain itu. Arjuna perlahan menggunakan kain itu untuk mengeringkan peju di selangkangan Maria lalu kemudian Arjuna membersihkan selangkangannya sendiri.<br />
+Maria yang masih mabuk kenikmatan memejamkan matanya lagi. Dalam ketelanjangannya, ia seakan tidak berdaya melakukan apa-apa lagi.<br />
+Setelah membersihkan pejunya dari tubuh Maria, Arjuna melempar kain mantan isterinya ke lantai. Lalu merebahkan diri di samping Maria yang masih tiduran dengan tangan kanan terangkat, bagian belakang telapak tangan Maria pun masih ditempelkan di dahinya menutupi mata dan sebahagian hidung Maria<br />
+<br />
+Arjuna yang tadi sudah ejakulasi, perlahan mulai horny lagi. Tubuh mantan isterinya yang sintal, perut yang rata menunjukkan lekuk tubuh perempuan dewasa yang tampak begitu manusiawi dan indah. Kedua payudaranya yang kini sedikit melebar ke samping karena sedang tiduran tidak tampak sebesar yang seharusnya, namun tidak mengurangi keindahan tubuh itu. Selangkangan yang dihiasi rambut tipis menambah erotis ketelanjangan mantan isterinya itu. Apalagi ketek yang tanpa bulu, dan basah oleh keringat tampak menantang ketika dibuka seperti itu.<br />
+Arjuna mendekatkan hidungnya ke ketek mantan isterinya. Hidungnya digelitik bau tubuh mantan isterinya yang belum mandi, bahkan sudah keringatan karena aktivitas tadi, menusuk tajam di hidungnya. Bau perempuan dewasa yang membawa penis Arjuna yang tadi telah ciut, perlahan tapi pasti bangkit dari tidurnya.<br />
+Maria merasakan ketiaknya disentuh oleh hidung mantan suaminya yang mengendus-endus mengeluarkan udara yang membelai pangkal lengannya mengirimkan sensasi menggelitik.<br />
+<br />
+“Kamu ga kerja mas?”<br />
+“Hari ini ijin sakit saja.”<br />
+“Sakit apa? Orang kamu sehat….”<br />
+“Sakit cinta. Arjuna cinta mati sama Maria. Cuma Maria yang bisa menyembuhkan penyakit ini.”<br />
+“Kamu kok gombal?” kata Maria, namun ada perasaan bangga dan sensual ketika ia mendengar mantan suaminya mengatakan cinta kembali kepadanya.<br />
+“enggak gombal, koq. Arjuna cinta banget sama Maria. Sakit rasanya kalau Maria enggak mau membalas cinta ini. Maria gimana?” kata Arjuna sambil terus bernafas di ketek mantan isterinya, sementara dagunya disandarkan di tempat tidur agar tidak pegal.<br />
+“Aku sayang Arjuna….”<br />
+“Kok sayang? Cinta dong. Arjuna ga hanya sayang, tapi cinta. Cinta kekasih. Kan kita kekasih? Maria kan kekasih Arjuna…”<br />
+“Iya……”<br />
+“cinta, kan?”<br />
+“Iya…..”<br />
+“kok iya-iya melulu…. Bilang dong Maria cinta Arjuna…..”<br />
+“Aku cinta Arjuna, kekasihku……”<br />
+“Nah gitu dong… tapi harus jelas. Siapa kekasih Maria? Harusnya Maria bilang cinta kepada kekasih yang adalah mantan suamiku… gitu…. Biar ga salah. Kan yang namanya Arjuna ga Cuma satu di Indonesia…”<br />
+“Aku cinta kamu, mantan suamiku…… suamiku kekasihku…….. mantan suamiku yang ganteng…….”<br />
+“Gitu dong….” Kata Arjuna senang. Lalu mengecup ketiak Maria. <br />
+“Arjuna seneng banget….. Arjuna sudah punya pacar lagi. Pacarnya cantik dan seksi. Dewasa, lagi. Arjuna kayak mimpi aja. Masih ga percaya…..”<br />
+<br />
+“Kamu kok gombal mulu, mas?” tapi hati Maria jadi berbunga-bunga. Dibilang cantik dan seksi. Arjuna sungguh romantis. Dulu sih beda jauh kalo dibanding sekarang ini. Dulu Arjuna tidak punya sifat romantis sama sekali.<br />
+“Bau Maria enak banget. Bikin Arjuna semangat.”<br />
+Lalu Arjuna mulai menjilati ketiak mantan isterinya lagi sambil meremas payudara kiri mantan isterinya. Maria mulai terangsang lagi. Mulut Arjuna asyik menjelajahi Maria. Setelah puas menjilati ketek kanan mantan isterinya, Arjuna mulai menjilati dada kanan mantan isterinya. <br />
+<br />
+Maria mulai bangkit birahinya perlahan. Kedua payudaranya mulai diserang mantan suaminya lagi. Tetek kirinya dijamahi oleh tangan kanan mantan suaminya, sementara bukit yang kanan dijilati dan disedoti oleh mulut mantan suaminya itu. Maria mulai mengerang-erang.<br />
+“aaaah….. , mas. Koq kamu jadi pengen terus sihhhh ……. Sayangku…… suamiku sayang……… ”<br />
+Dada kiri Maria mulai diselomoti mulut Arjuna, sementara kini ganti tangan kiri Arjuna meremasi payudaranya yang sebelah kanan. Maria merasakan gejolak birahinya makin meninggi. Diremas-remasnya kepala mantan suaminya dengan kedua tangannya,<br />
+“terus Mas …. kekasihku…….. suamiku sayang………. tampan-ku …. suamiku… pacarku……. Kekasihku…..”<br />
+Mulut Arjuna kini mulai menjilati perut Maria. Maria merasa geli sekaligus birahi. Kini kedua tangan mantan suaminya mulai meremasi kedua payudaranya. Sementara lidah mantan suaminya itu mulai menari dipusarnya, berputar-putar lalu menyapu dari atas ke bawah seakan ingin merasakan seluruh jengkal pusarnya itu.<br />
+<br />
+Arjuna mencium bau tubuh Maria makin santer tercium, keluar dari memek mantan isterinya. Tak sabar, ia mulai menjilat ke bawah. Dijilatinya jembut mantan isterinya yang tipis dan rapi itu, lalu disibaknya jembut itu, maka terlihatlah memek mantan isterinya yang telanjang. Baru kali ini Arjuna melihat kemaluan mantan isterinya tanpa tutup sedekat ini. Dua buah bibir rapat dihiasi ladang jembut di antara sepasang paha yang putih. Ditariknya kedua bibir memek mantan isterinya, maka terlihatlah bagian dalam vagina mantan isterinya. Bau tubuh Maria kini seakan menguasai segenap lubang hidung Arjuna. Bau tubuh Maria yang keluar dari organ intimnya.<br />
+<br />
+Bagian dalam memek Maria berwarna merah, sedikit merah muda. Dilihatnya klitoris mantan isterinya menghiasi puncak keintiman Maria dan di bagian bawah, bibir dalam vagina itu membuka memperlihatkan lubang surgawi miliknya.<br />
+Arjuna mulai menjilati memek mantan isterinya. Maria yang dulu pun memeknya belum pernah dijilat suaminya terkejut merasakan sensasi baru namun asyik. Geli-geli namun geregetan sekali rasanya.<br />
+“Mas….. itu kan kotor…. Bekas pipis….. jangan ah…… jorok….” Namun walau Maria melarang, tapi tangannya malah menekan kepala Arjuna semakin masuk ke dalam vaginanya.<br />
+<br />
+Arjuna merasakan sensasi aneh di lidahnya. Ada rasa asam dan getir di lidahnya, hidungnya mencium bau campuran antara bau tubuh mantan isterinya dengan sedikit bau pesing air kencing. Namun, bukannya jijik, Arjuna malah tenggelam dalam nafsu. Arjuna malah menjadi makin bernafsu menjilati kemaluan mantan isteri itu.<br />
+Bagaikan Anjing yang kehausan, Arjuna asyik sekali menjilati vagina mantan isterinya. Maria kini menggelinjang tak keruan, matanya terpejam setengah dan hanya bagian putih yang terlihat dari bola matanya. Maria merasa di awang-awang surga ketujuh. Memeknya terasa geli dan enak disapu lidah Arjuna. Apalagi karena yang menjilat adalah mantan suaminya sendiri, kenikmatan yang dirasakan Maria menjadi bertambah hebat. Ada perasaan bersalah, namun malah menambah intensitas birahinya. Maria merasakan nikmatnya oral seks membuat dirinya lupa daratan. Seakan-akan seluruh tubuhnya hilang dan yang eksis hanya memeknya saja yang sedang dijilati.<br />
+<br />
+Maria tidak tahu berapa lama sudah mantan suaminya menjilati kemaluannya, yang jelas sebentar lagi ia kan mengalami orgasme, erangan Maria kini terdengar menjadi bentakan,<br />
+“Ah….. aduhhhh…. mas… duh ... duh...., mas! geli rasanya, mas! geli bangettt…. Aaaaaah…….. heeeeeh…… ssshhhhhh………..”<br />
+Tahu-tahu Maria merasakan klitorisnya disedot. Maria menggila, ditekannya kepala mantan suaminya ke memeknya keras-keras sambil memutar pantatnya,<br />
+“Aaaaaaah……….. enak banget, masss! aduhhhhh………..”<br />
+Maria tiba-tiba menggelinjang keras dan menekan kepala mantan suaminya sekuat tenaga. Dirasakannya orgasme bertubi-tubi yang dahsyat dan sangat lama.<br />
+<br />
+Lalu Maria terhenyak di tempat tidur kelelahan. Ia meringkukkan badan sehingga tidur menyamping dengan posisi bagaikan janin, dengan kedua kaki membentuk siku dan kedua tangan yang memeluk kaki.<br />
+Arjuna baru saja melihat mantan isterinya orgasme menjadi senang. Tidak lama lagi mantan isteri akan mau jadi isteriku kembali, pikirnya. Apalagi ketika mantan isterinya orgasme dan tak kuasa nyemprotkan air dari vaginanya beberapa kali juga menambah nuansa liar. Tadi Arjuna berusaha meminum semua air itu, namun tetap saja air itu tidak semuanya masuk ke mulutnya. Banyak yang menciprati wajahnya dan ada juga yang jatuh di kaki Maria. Arjuna kini menjilati selangkangan dan paha mantan isterinya.<br />
+<br />
+“Udah, mas. Maria capek……”<br />
+Arjuna menghentikan aksinya.<br />
+“Tapi Arjuna kan belum?”<br />
+Maria meluruskan kakinya walaupun tetap tidur menyamping.<br />
+“Kamu selipin aja di antara paha Maria, di bawah vagina.”<br />
+<br />
+Arjuna lalu memposisikan dirinya dibelakang mantan isterinya. Maria mengangkat sebelah kakinya. Arjuna menaruh penisnya di bawah memek mantan isterinya. Maria merapatkan lagi kakinya sehingga kini kontol Arjuna dijepit kedua pahanya. Arjuna lalu memeluk mantan isterinya dari belakang dengan kedua tangan menggengam payudara Maria. Arjuna mulai menggoyang pantatnya maju mundur.<br />
+Punggung mantan isterinya yang mengkilat karena keringat segera diciumi Arjuna. Arjuna dapat merasakan kulit punggung yang halus bergesekkan dengan hidungnya. <br />
+<br />
+Di lain pihak, kedua tangannya kembali meremas-remas buah dada mantan isterinya yang lembut dan kenyal. Sementara itu, kontolnya mulai basah karena terkena sisa cairan memek Maria yang tadi baru saja orgasme, apalagi saat ini Arjuna sedang mengocok kontolnya di selangkangan Maria dengan jepitan paha mantan isterinya itu. Sementara, sensasi kedua paha mantan isterinya yang menjepitnya sungguh dirasa nikmat.<br />
+<br />
+Mulut Arjuna juga kadang mengecup dan mengenyot punggung mantan isterinya yang bermandikan peluh dan sekarang, bermandikan ludah Arjuna juga. Sehingga tak lama kemudian punggung mulus mantan isterinya telah dihiasi bekas-bekas merah akibat cupangan. Jilatan kini sudah sangat melebar, cupangan dan sedotannya juga makin kencang, sehingga menimbulkan bunyi kecipokan yang keras.<br />
+Maria mulai horny lagi. Memeknya digesekki oleh kontol mantan suaminya yang keras, sementara kedua payudaranya diremas-remas secara lembut, dan punggungnya dijelajahi oleh mulut dan lidah kekasihnya itu. Semuanya membuat Maria kembali birahi untuk kesekian kalinya pagi itu.<br />
+<br />
+Arjuna mulai menggerakkan tubuhnya perlahan ke bawah, mulutnya mulai menjelajahi bagian bawah punggung Maria, namun bukan itu sebabnya, melainkan lama kelamaan batang kontolnya kini mulai mengarah vertikal ke atas, bagusnya mantan isterinya belum sadar. Karena ia terus memaju mundurkan pantatnya yang menyebabkan Maria tetap terhanyut goyangan ini dan tenggelam dalam nafsu birahi.<br />
+Suatu saat, Arjuna menarik pantatnya agak jauh lalu menusukkannya secara cepat ke atas. Kepala kontolnya secara tiba-tiba menerobos bibir vagina Maria yang basah, hanya sayang saja lubang senggama mantan isterinya luput, sehingga kini kepala kontolnya ‘terpeleset’ dan bergerak sejajar lagi seperti semula. Namun dalam sepersekian detik itu kontolnya telah masuk ke dalam lipatan bibir vagina mantan isterinya.<br />
+“Mas! Kamu ga boleh masukkin!” teriak mantan isterinya.<br />
+“enggak dimasukkin kok. Kan ga masuk ke lubangnya. Ini Cuma gesek di luar lubang, kok.”<br />
+Maria tidak menjawab lagi. Karena memang burung Arjuna tadi tidak masuk ke liang senggamanya, melainkan hanya lewat saja.<br />
+Arjuna kembali melakukan gerakan tadi, berhubung tidak ada protes dari mantan isterinya. Ditariknya pantatnya ke bawah lalu ditusuk ke atas. Kembali bibir luar vagina mantan isterinya merekah, kepala kontol Arjuna berniat masuk ke dalamnya, kali ini ujung kontolnya menekan ke pinggir lubang memek mantan isterinya, karena tidak tepat bidikannya sehingga kembali mencelat keluar dan menggesek sepanjang dinding vagina mantan isterinya.<br />
+<br />
+“Tuh…. Tadi hampir masuk,” omel mantan isterinya.<br />
+“enggak, Cuma di pinggir lubang. Arjuna ga bakal masukkin kok. Nih liat…..”<br />
+Sambil berkata begitu, Arjuna menarik pantatnya lagi lalu mendorong kontolnya ke arah memek mantan isterinya. Kembali kontol Arjuna menggesek lubang senggama mantan isterinya, namun tidak masuk ke dalam karena posisi kontolnya sejajar dengan memek mantan isterinya itu.<br />
+“ga masuk, kan? Tenang aja ….” Kata Arjuna.<br />
+Untuk beberapa lama, Arjuna menggeseki bagian dalam memek mantan isterinya, sekedar melintas di atas lubang memek Maria untuk kemudian ditekan di sepanjang bagian dalam memek mantan isterinya itu sampai ke klitorisnya bahkan mungkin lebih jauh lagi karena terkadang penis Arjuna merasakan jembut mantan isterinya pada saat terlalu menusuk ke depan. Maria merasakan permainan ini bahaya, ada kemungkinan kontol mantan suaminya dapat selip dan tiba-tiba masuk ke dalam liang senggamanya. Hanya saja bahaya ini di lain pihak juga membuat jantungnya deg-degan dan menambah rasa erotis yang lain, perasaan yang menggetarkan jiwa. Persenggamaan mantan suami isteri adalah hal yang tabu karena secara hukum dan agama tetap saja statusnya belum menikah, tapi secara aneh kondisi ini malah membuat Maria merinding bila memikirkannya.<br />
+<br />
+“Janji, ya Mas? jangan dimasukkin…..”<br />
+“Tenang aja, sayang,” kata Arjuna, kali ini sambil mendorong tubuh mantan isterinya dengan tubuhnya sehingga kini mantan isterinya tiduran tengkurap dengan Arjuna menindih bagian belakang tubuh mantan isterinya yang telanjang bulat itu. Arjuna merubah posisinya hingga badannya sedikit lagi turun dari posisinya semula, agar lebih mudah beroperasi. <br />
+<br />
+Kini kedua tangannya ditaruh di pundak mantan isterinya, lalu Arjuna mulai mengocok-ngocok selangkangan mantan isterinya lagi.<br />
+Gesekkan-gesekkan kontol mantan suaminya malah semakin membawa Maria ke lembah birahi sekali lagi. Memeknya kini sudah basah total-total, bermandikan cairan kewanitaanya sendiri. Terkadang Maria merasakan kepala kontol mantan suaminya menggowes lubang memeknya untuk kemudian mencelat lurus menggeseki garis vaginanya menuju klitoris, sementara punggungnya menjadi korban keganasan mulut dan lidah mantan suaminya.<br />
+Tiba-tiba dalam satu tusukkannya, Maria merasakan kepala kontol mantan suaminya itu menancap di lingkar luar liang senggamanya. Maria kaget dan ketika ia hendak berteriak pada Arjuna, kontol Arjuna telah ditarik, untuk kemudian kembali menggesek-gesek seperti sebelumnya.<br />
+<br />
+“Kamu sengaja, ya? Hampir masuk, tadi!”<br />
+“kan baru hampir, berarti belum masuk, kan ?”<br />
+Maria hanya mendengus. Lalu kembali mantan suaminya mengocoki vaginanya lagi. Bagian dalam memek Maria begitu licinnya sehingga gerakan kontol Arjuna begitu lancar menggesek naik turun sepanjang vagina bagian dalam Maria.<br />
+Tiba-tiba kembali kepala kontol Arjuna menancap di ujung lubang, namun secepat kilat ditarik kembali, lalu kembali menggesek-gesek. Kali ini Maria tidak berkomentar. Yang penting belum masuk, pikirnya. Namun tak lama kemudian kontol itu kembali menancap lalu ditarik. Kemudian menggesek lagi. Maria jadi curiga apakah ini kesengajaan atau tidak? Ia menghitungnya. Sekali menancap, sepuluh kali gesek. Sekali nancap, sembilan kali gesek. Ketika kontol itu menancap di depan lubang, Arjuna tidak mendorong dengan kuat, hanya cukup untuk menempel saja, namun gerakan gesek berikutnya adalah gerakan menggesek memeknya kembali. Rupanya ada suatu pola. Pola berarti kesengajaan. Sungguh mantan suaminya memang bandel.<br />
+<br />
+Kini gerakan Arjuna sudah menjadi sekali nancap, lima kali gesek. Pola ini berlanjut beberapa lama. Mungkin tidak akan berubah lagi, pikir Maria. Dan Maria menjadi tidak terlalu memikirkannya lagi dan sekarang berusaha menikmati goyangan mantan suaminya. Ketika Maria mulai terombang-ambing, dirasakannya kini Arjuna telah merubah pola serangannya. Sekali tancap, dua kali gesek. Maria belum sadar bahwa gerakan ini cukup berbahaya karena ia pun sedang hanyut menikmatinya malah sebentar lagi akan orgasme sehingga hampir tidak peduli akan segala hal apapun juga.<br />
+Pola gerakan Arjuna diimbangi Maria. Ketika kontol Arjuna menggeseki memeknya dua kali, maka Maria membalas dengan menekan pantatnya kebawah sehingga tusukan Arjuna ditambah dengan tekanannya sendiri membuat gesekkan kedua kelamin itu menjadi lebih melesak kedalam walaupun tak sampai masuk.<br />
+Maria mulai mengoceh tak keruan,<br />
+“aduhhhh... haduhhhhhh .... haaaaahhhhh .... haaaaahhhhhh ....”<br />
+Gerakan mereka bertambah cepat. Dua kali gesek, sekali tancap. Dua kali gesek, sekali tancap.<br />
+“Aku udah pengen mas ……. Aaaaaaaah! ....<br />
+ketika Maria berkata ia hampir orgasme, Arjuna merubah pola gerakannya. Dari satu kali tancap, dua kali gesek, menjadi satu kali tancap, satu kali gesek dan satu kali tancap dan Arjuna menusuk ke depan dengan kuat, sementara kedua tangannya merangkul mantan isterinya dari belakang dengan cara melingkarkan tangan melalui bawah ketiak mantan isterinya, lalu telapak tangan dibuka ke dalam lalu memegang pundak depan mantan isterinya dari arah bawah, sebelum gerakan tusukan di lancarkan. <br />
+<br />
+Lalu tepat bersamaan Maria sampai di puncaknya, Gerakan terakhir ini membuat kontol Arjuna serta merta ambles ke dalam liang senggama mantan isterinya, karena selain tusukkan Arjuna yang disengajakan, Maria juga sedang menekan ke bawah mengikuti irama satu tancap dua gesek tadi. Itu yang membuat mantan isterinya teriak jangan.<br />
+<br />
+&nbsp;".... Aduhhhhh ... ahh .... ahhhh .... mas jangaaaaaaan!! aaahhhhhh …….” sambil mata Maria membelalak.<br />
+<br />
+Tapi, Maria tidak berontak karena saat itu juga ia mengalami orgasme. Sudah lama sekali Maria menahan nafsunya karena tidak pernah dinafkahi mantan suaminya. Kini tiba-tiba kontol itu memasukki memeknya lagi, apalagi memang dia dalam keadaan birahi tinggi dan sudah hampir klimaksnya, maka ketika mantan suaminya menghujamkan penisnya dalam-dalam, maka Maria mencapai orgasme yang begitu hebat yang belum pernah dirasakannya sebelumnya.<br />
+<br />
+Arjuna merasa dirinya di surga ketujuh. Kini kontolnya sudah ambles masuk ke lubang kencing mantan isterinya. Dirasakannya liang senggama mantan isterinya begitu berkelonjotan meremas batang kontolnya. Dinding liang senggama mantan isterinya basah oleh cairan kewanitaan dan terasa seperti pipa yang menjepit keras kontolnya. Apalagi sekarang mantan isterinya sedang dilanda orgasme yang cukup lama.<br />
+Arjuna dapat merasakan pinggul mantan isterinya yang sedikit bergetar seperti menggigil, sementara dinding lubang kencing mantan isterinya berdenyut-denyut meremas kontolnya seakan ingin menyedot habis isi kontolnya. Arjuna segera langsung ber-ejakulasi&nbsp; tanpa mampu di tahannya dan tanpa sengaja menyebarkan benihnya ke dalam rahim mantan isterinya.<br />
+<br />
+Arjuna yang sedang kalap karena nafsu, tak menggerakkan mulutnya lagi. Kedua tangannya tetap merangkul mantan isterinya dari belakang dan menekan tubuh mantan isterinya seiring irama puluhan semprotan dari kontolnya. Maria yang masih mengigil dan belum selesai merasakan gelombang orgasmenya pun berteriak<br />
+“Mas…….. jangan masukinnn kayak gitu………………aaaaaahhhhhh……… jangan dikeluarin di dalam…….. mas…… jangan dikeluarin di dalam……….. ssssshhhhhhhh………”<br />
+"cret ... cret ... cret ...cret ..." hampir dua puluh kali batang itu tak bisa dibendung lagi oleh Maria.<br />
+<br />
+Arjuna yang baru sekali ini merasakan nikmatnya bersenggama yang benar-benar dahsyat sampai kelonjotan seperti itu. Dan tadi saat ia mendengar mantan isterinya berbicara jangan dikeluarin di dalam, ia malah tidak fokus da mengira mantan isterinya meminta agar kontolnya jangan dikeluarin tetapi di dalam aja. Sehingga tadi Arjuna menjadi semakin semangat mengobok-obok kemaluan mantan isterinya dengan burungnya.<br />
+<br />
+“uuuuh…… memek Maria ternyata nikmat banget………. Anget…….. licin sama sempiiiiit……….. Arjuna ga tahaaaaaan…..,” kata Arjuna lalu kembali mengenyot punggung mantan isterinya yang banjir keringat dengan keras, sementara nafsu birahinya seakan menghabisnya seluruh energi yang dipunyainya.<br />
+<br />
+Arjuna merasakan kenikmatan yang tak ada taranya. Dulu ia sudah sering ML dengan isterinya ini, tapi kali ini, sensasi mengentot Maria seakan menambah berkali-kali lipat kenikmatan-nya.<br />
+<br />
+Bila ada orang yang melihat adegan di kamar itu tentu akan terhenyak. Seorang wanita muda, seorang mantan isteri sedang tengkurap ditindih oleh mantan suaminya sendiri, sementara kontol masih terhujam ke dalam memek mantan isteri itu.<br />
+<br />
+Akhirnya Arjuna lemas dan menindih di atas Maria bagaikan orang pingsan, hanya saja keduanya bernafas berat, sedikit tersengal-sengal bagaikan orang yang baru saja selesai lari marathon.<br />
+Setelah hampir dua menit Arjuna menindih mantan isterinya, Maria membalikan tubuh sehingga Arjuna jatuh kesamping. Kemudian Maria menarik tubuhnya sehingga kelamin mereka lepas. Air mani Arjuna menetes perlahan dari memeknya. Lalu Maria berkata,<br />
+“Mas. Gimana nanti kalau Maria hamil.”<br />
+“emang kenapa ? Bukannya Maria suka dan menikmati juga emang kenapa kalo hamil? Maria ga suka punya anak? Arjuna suka banget kalau punya anak. Tapi maukah Maria kembali menjadi isteri sah arjuna ? ….”<br />
+Maria terdiam. Lalu berkata,<br />
+“itu dia, mas. khan kalau sekarang Maria hamil walaupun kita buru-buru nikah lagi bulan depan, masakan sebelum 9 bulan nikah Maria sudah lahiran. Kalau tetangga tahu pasti akan mengira Maria berbuat maksiat, walapun memang iya ...”<br />
+"Di kampung ini berzinah itu hukumannya berat mas, bisa di bakar atau di lempari batu sampai meninggal oleh seluruh warga"<br />
+“Jadi Maria ga boleh hamil dulu maksudnya ?”<br />
+Maria menggeleng.<br />
+“Emang kalau Arjuna masukkin titit ke memek Maria kayak gini, Maria sudah pasti hamil?” tanya arjuna pura-pura bego.<br />
+“Belum pasti. Tapi kemungkinan besar.”<br />
+“supaya tidak hamil bagaimana?” tanya Arjuna penasaran.<br />
+“Seharusnya sebelum begituan Maria harus pasang alat KB seperti pil, suntik dan lain-lain. Atau KB Alami. makanya Maria bilang jangan di masukin”<br />
+“Alat KB mahal ya Maria ? Kalau KB alami mahal juga gak ?”<br />
+“KB Alami gratis sih, Cuma lebih susah.”<br />
+“Caranya?”<br />
+“ada yang pakai kalender, agak susah diceritakan. Tapi yang ini susah untuk diikuti, dan sebagian besar orang tidak berhasil.”<br />
+“Ada yang lain?”<br />
+“Bisa juga lelakinya buang di luar.”<br />
+“Maksudnya?”<br />
+“Kamu tau kan ejakulasi?”<br />
+“maksudnya?”<br />
+“titit kamu keluarin cairan putihnya jangan di dalam memek Maria. Kayak ini,” Maria menunjukkan cairan peju mantan suaminya yang keluar dari memeknya yang baru saja dientot itu.<br />
+“Oh itu ….. emang kenapa?” tanya Arjuna pura-pura tidak mengerti.<br />
+“Nah, kalau lelaki menaruh tititnya di tempik perempuan itu namanya berhubungan badan. Nah, hubungan badan itu akan selesai ketika lelaki mengeluarkan cairan putih itu. KB Alami lainnya adalah waktu cairan itu mau keluar, lelaki mencabut tititnya dari tempik perempuan lalu mengeluarkan cairan itu di luar tempik perempuan itu. Mengeluarkan ejakulasinya diluar.”<br />
+“Jarang lelaki yang bisa menahan ketika saat ejakulasi. Tadi saja kamu ga tahan kan. Ini peju kamu udah di dalam perut Maria.”<br />
+“Yaaaa…. Kan Arjuna tadi ga dikasih tahu. khan dulu juga begitu"<br />
+"ya dulu khan Maria tidak takut hamil, punya suami yang sah ..."<br />
+"ya sudah ... gini aja, kita nikah lagi bulan depan dan langsung pindah ke kota, nanti di kota kita tinggal bilang kalau kita adalah pasangan suami isteri lama, khan ga ada juga yang kenal kita di sana" ide briliant Arjuna.<br />
+Akhirnya Maria pun setuju, mereka kembali menikah, dan segera pindah ke kota meninggalkan kenangan pahit di kampung itu untuk selamanya.<br />
+TAMAT.
+
+</div>
+
+
